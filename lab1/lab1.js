@@ -1,4 +1,4 @@
-async function scatterPlot() {
+async function barChart() {
     const width = 800;
     const height = 450;
     const chartHeight = 350;
@@ -11,6 +11,14 @@ async function scatterPlot() {
         .append("svg")
         .attr("width", width)
         .attr("height", height);
+
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", 30)
+        .attr("text-anchor", "middle")
+        .attr("font-size", "24px")
+        .attr("font-weight", "bold")
+        .text("Student Scores");
 
     d3.csv("../data/students.csv", d => ({
         name: d.name,
@@ -50,4 +58,4 @@ async function scatterPlot() {
     });
 }
 
-scatterPlot()
+barChart()
