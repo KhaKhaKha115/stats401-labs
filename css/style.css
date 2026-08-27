@@ -1,12 +1,26 @@
+.sniglet-regular {
+  font-family: "Sniglet", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sniglet-extrabold {
+  font-family: "Sniglet", system-ui;
+  font-weight: 800;
+  font-style: normal;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: Sniglet, sans-serif;
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
+    color: SlateBlue;
 }
 
 h1 {
     font-size: 32px;
+    font-weight: 550;
 }
 
 h2 {
@@ -33,12 +47,41 @@ p {
 .lab-nav a {
     padding: 8px 14px;
     text-decoration: none;
-    background: #f1f1f1;
-    color: #333;
+    background: rgb(106 90 205 / 30%);
+    color: SlateBlue;
     border-radius: 5px;
 }
 
 .lab-nav a:hover {
-    background: #333;
+    background: SlateBlue;
     color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.back-link {
+    font-family: "Sniglet", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.lab-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.lab-header h1 {
+    margin: 0;
+}
+
+.back-link {
+    font-family: "Sniglet", system-ui;
+    font-weight: 800;
+    font-size: 28px;
+    text-decoration: none;
+    color: SlateBlue;
 }
