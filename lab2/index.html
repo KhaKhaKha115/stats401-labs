@@ -8,20 +8,50 @@
 
     <title>Lab 2</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <h1>Lab 2</h1>
+    <div class="lab-header">
+        <a href="../index.html" class="back-link">←</a>
+        <h1>Lab 2 - Multivariate Visualization with D3</h1>
+    </div>
 
     <p>
-        Lab 2 will be added here.
+        This visualization explores the relationship among population, temperature, region, and development level.
     </p>
 
-    <a href="../index.html">
-        Back to home
-    </a>
+    <div id="chart"></div>
+    <div id="tooltip" class="tooltip"></div>
 
+    <div id="desgin">
+        <h2>Design Justification</h2>
+        <p>
+            <strong >Temperature → X-axis:</strong>
+            I mapped temperature to the x-axis because it is a numerical variable and position makes it easy to compare values from low to high. This also helps viewers notice whether warmer or cooler cities tend to have different population levels.
+        </p>
+
+        <p>
+            <strong>Population → Y-axis:</strong>
+            I mapped population to the y-axis because it is also numerical, so position is a clear way to compare city populations. Together with temperature on the x-axis, viewers can easily see the relationship between these two variables.
+        </p>
+
+        <p>
+            <strong>Development Level → Color:</strong>
+            I used color to represent development level. Low, Medium, and High use progressively darker shades of the same color so the ordered difference is easy to understand. I hope viewers can notice whether highly developed cities appear in particular parts of the chart.
+        </p>
+
+        <p>
+            <strong>Region → Letter inside each point:</strong>
+            I used N, S, E, and W inside each data point to represent North, South, East, and West. This keeps every point the same shape while still making region easy to identify. Viewers can compare whether cities from the same region show similar patterns.
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="lab2.js"></script>
 </body>
 
 </html>
