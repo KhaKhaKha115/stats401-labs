@@ -83,7 +83,7 @@
 }
 
 body {
-    font-family: "IBM Plex Serif", sans-serif;
+    font-family: "IBM Plex Serif", serif;
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
@@ -167,4 +167,11 @@ a {
     pointer-events: none;
     opacity: 0;
     font-size: 14px;
+    pointer-events: none;
+    cursor: default;
+}
+
+.city text {
+    pointer-events: none;
+    user-select: none;
 }
