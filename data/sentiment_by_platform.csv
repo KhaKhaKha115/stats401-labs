@@ -1,0 +1,95 @@
+platform,sentiment,count
+24liveblog,Neutral,1
+4StateNews,Neutral,1
+AdvisorStream v2,Negative,1
+Avicennaretweetbot,Neutral,1
+BaarahK,Neutral,1
+Bruning Twitter Feed,Negative,1
+Buffer,Neutral,2
+CanNewsBot,Neutral,2
+Carona Updates,Neutral,1
+"Cheap Bots, Done Quick!",Neutral,1
+Connecticut vaccine bot,Neutral,2
+ContentStudio.io,Neutral,1
+Corona Virus Update Bot,Neutral,1
+CoronaTweetBot,Positive,1
+Covidvax DEL,Neutral,1
+Devdiscourse News Desk,Neutral,1
+Echobox,Neutral,1
+Find A Vac,Neutral,2
+Find A Vac austin,Neutral,1
+FindAVac,Neutral,2
+GT_Backend,Neutral,1
+GaggleAMP,Neutral,1
+Gambiste,Neutral,1
+Gulf Insider Website,Neutral,1
+Hocalwire Social Share,Neutral,1
+Hootsuite Inc.,Negative,3
+Hootsuite Inc.,Neutral,9
+Hootsuite Inc.,Positive,4
+HubSpot,Neutral,1
+HubSpot,Positive,1
+IFTTT,Neutral,3
+IL Vax Updates,Neutral,2
+IndiaTodayFLASH,Neutral,1
+MSPVACCINEWATCH,Neutral,1
+Meltwater Social,Neutral,1
+Modern Ghana,Neutral,1
+Mondaq_Tweet,Neutral,1
+MyDCANews,Neutral,1
+MyTestingBotRt,Neutral,1
+NYC Vaccine Bot,Neutral,1
+NotifyVaccines,Neutral,1
+Periscope,Neutral,1
+Plume for Android,Negative,1
+PolyTwonkBot,Negative,1
+PulpNews,Neutral,1
+Quant Data (Production),Neutral,1
+Reveal House Press,Negative,1
+Right Relevance,Neutral,1
+Salesforce - Social Studio,Neutral,1
+Sentir Radio Nowplaying,Neutral,1
+ShadowTweetWE,Neutral,1
+SocialFlow,Negative,1
+SocialFlow,Neutral,6
+SocialNewsDesk,Neutral,5
+SocialOomph,Neutral,1
+SocialShare PRD,Neutral,1
+Sprout Social,Negative,1
+Sprout Social,Neutral,4
+Start Small Charity Tracker,Neutral,1
+The Domain Bot,Positive,1
+The Tweeted Times,Positive,1
+True Anthem,Neutral,4
+Tumblr,Neutral,1
+TweetDeck,Negative,3
+TweetDeck,Neutral,12
+TweetDeck,Positive,2
+Twitter Media Studio,Negative,1
+Twitter Web App,Negative,72
+Twitter Web App,Neutral,169
+Twitter Web App,Positive,22
+Twitter for Advertisers,Neutral,1
+Twitter for Android,Negative,76
+Twitter for Android,Neutral,215
+Twitter for Android,Positive,46
+Twitter for Mac,Positive,1
+Twitter for iPad,Negative,11
+Twitter for iPad,Neutral,19
+Twitter for iPad,Positive,7
+Twitter for iPhone,Negative,57
+Twitter for iPhone,Neutral,128
+Twitter for iPhone,Positive,31
+Vaccine App Alerts Bot,Neutral,4
+VaxAlerts,Neutral,1
+WordPress.com,Negative,1
+WordPress.com,Neutral,5
+YoruFukurou,Negative,1
+Zapier.com,Neutral,1
+covid_osha_bot,Neutral,1
+dlvr.it,Negative,3
+dlvr.it,Neutral,12
+garda-security-alerts,Neutral,1
+himachalibot,Neutral,1
+my-vax-la-bot,Neutral,3
+optimistic_bot,Neutral,1

@@ -107,6 +107,78 @@ p {
     margin-top: 30px;
 }
 
+#chart svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.chart-intro {
+    color: #514b78;
+    margin-bottom: 0;
+}
+
+.grid line {
+    stroke: #e4e1f1;
+}
+
+.grid .domain {
+    display: none;
+}
+
+.axis path,
+.axis line {
+    stroke: #716b8f;
+}
+
+.axis text,
+.axis-label {
+    fill: #514b78;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 12px;
+}
+
+.axis-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.zero-line {
+    stroke: #6a5acd;
+    stroke-dasharray: 5 4;
+    stroke-width: 1.5;
+}
+
+.sentiment-line {
+    fill: none;
+    stroke: #6a5acd;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.sentiment-point {
+    fill: #ff8a65;
+    fill-opacity: 0.75;
+    stroke: white;
+    stroke-width: 1.5;
+}
+
+.sentiment-point:hover {
+    fill-opacity: 1;
+    stroke: #514b78;
+}
+
+.analysis {
+    max-width: 780px;
+    margin: 42px 0 60px;
+}
+
+.chart-error {
+    color: #a12828;
+}
+
 .lab-nav {
     display: flex;
     flex-wrap: wrap;

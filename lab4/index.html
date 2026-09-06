@@ -6,22 +6,51 @@
 
     <meta charset="UTF-8">
 
-    <title>Lab 4</title>
+    <title>Lab 4: Tweet Sentiment</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-    <h1>Lab 4</h1>
+    <div class="lab-header">
+        <a href="../index.html" class="back-link">←</a>
+        <h1>Lab 4: Cleaning Web Data for Visualization</h1>
+    </div>
 
-    <p>
-        Lab 4 will be added here.
-    </p>
+    <main>
+        <section>
+            <h2>How does COVID-19 tweet sentiment change by week?</h2>
 
-    <a href="../index.html">
-        Back to home
-    </a>
+            <p class="chart-intro">
+                Each bar shows the average RoBERTa sentiment score for tweets in one week.
+            </p>
+
+            <div id="chart"></div>
+            <div id="tooltip" class="tooltip"></div>
+
+            <h2>Short Analysis</h2>
+            <p>
+                I used the COVID-19 Twitter Dataset from Kaggle, created by Arunava Chakraborty, which contains public COVID-19 tweets collected across multiple periods. I used three files covering April–June 2020, August–September 2020, and April–June 2021, then combined them and selected a reproducible sample of 1,000 tweets from each period, giving 3,000 tweets in total.
+                Data source:
+                <a href="https://www.kaggle.com/datasets/arunavakrchakraborty/covid19-twitter-dataset?resource=download" target="_blank">
+                    COVID-19 Twitter Dataset on Kaggle
+                </a>
+            </p>
+
+            <p>
+                For cleaning, I removed records with missing tweet text or invalid dates, handled missing values, standardized text fields, and removed duplicate tweets. I did not use the sentiment labels already included in the original datasets. Instead, I calculated sentiment using the <code>cardiffnlp/twitter-roberta-base-sentiment-latest</code> model.
+            </p>
+            <p> The sentiment score is the positive probability minus the negative probability, so more negative values indicate more negative sentiment. The visualization groups tweets by week and shows the average sentiment score for each week. Overall, sentiment remains negative across all sampled weeks. The most negative weeks appear around early June 2020 and early September 2020, while several weeks in 2021 are closer to neutral, suggesting that COVID-19 discussion became somewhat less negative in the later period.
+            </p>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="lab4.js"></script>
 
 </body>
 

@@ -1,0 +1,26 @@
+period,week,sentiment,count
+Apr-Jun 2020,2020-04-13,Neutral,1
+Apr-Jun 2020,2020-04-27,Negative,1
+Apr-Jun 2020,2020-05-18,Neutral,1
+Apr-Jun 2020,2020-05-25,Negative,1
+Apr-Jun 2021,2021-04-26,Negative,30
+Apr-Jun 2021,2021-04-26,Neutral,80
+Apr-Jun 2021,2021-04-26,Positive,16
+Apr-Jun 2021,2021-05-03,Negative,52
+Apr-Jun 2021,2021-05-03,Neutral,154
+Apr-Jun 2021,2021-05-03,Positive,26
+Apr-Jun 2021,2021-05-10,Negative,24
+Apr-Jun 2021,2021-05-10,Neutral,82
+Apr-Jun 2021,2021-05-10,Positive,13
+Apr-Jun 2021,2021-05-17,Negative,40
+Apr-Jun 2021,2021-05-17,Neutral,139
+Apr-Jun 2021,2021-05-17,Positive,20
+Apr-Jun 2021,2021-05-24,Negative,87
+Apr-Jun 2021,2021-05-24,Neutral,191
+Apr-Jun 2021,2021-05-24,Positive,42
+Apr-Jun 2021,2021-05-31,Neutral,1
+Apr-Jun 2021,2021-06-07,Neutral,2
+Apr-Jun 2021,2021-06-14,Neutral,1
+Aug-Sep 2020,2020-08-17,Neutral,1
+Aug-Sep 2020,2020-09-07,Neutral,1
+Aug-Sep 2020,2020-10-05,Neutral,1
