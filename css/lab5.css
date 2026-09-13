@@ -1,4 +1,4 @@
-main { color: #38354b; }
+/* main { color: #38354b; }
 a { color: #6654be; text-decoration: underline; }
 h2, h3 { color: SlateBlue; }
 section { margin: 36px 0; }
@@ -21,8 +21,238 @@ section { margin: 36px 0; }
 .matrix-cell:hover { stroke: #181321; stroke-width: 2; }
 select { font: inherit; padding: 6px; color: #38354b; border: 1px solid #aaa; border-radius: 4px; }
 /* Inherit tooltip typography, color, and appearance from style.css. */
-.tooltip { z-index: 10; max-width: 260px; white-space: pre-line; }
+/* .tooltip { z-index: 10; max-width: 260px; white-space: pre-line; }
 th { text-align: left; background: #f2effa; }
 td { vertical-align: top; line-height: 1.5; }
 #findings { font-size: 14px; min-width: 600px; }
-@media (max-width: 600px) { body { margin: 24px auto; padding: 0 12px; } h1 { font-size: 24px; } }
+@media (max-width: 600px) { body { margin: 24px auto; padding: 0 12px; } h1 { font-size: 24px; } } */ */
+
+main {
+    color: #44444f;
+    font-family: "IBM Plex Serif", serif;
+}
+
+a {
+    color: #5a5a66;
+    text-decoration: underline;
+}
+
+h2,
+h3 {
+    color: SlateBlue;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 600;
+}
+
+section {
+    margin: 36px 0;
+}
+
+#status {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #4b4b55;
+}
+
+#chart {
+    background: #faf9fd;
+    border: 1px solid #e4e1f1;
+    border-radius: 8px;
+}
+
+#chart svg {
+    overflow: hidden;
+}
+
+#legend{
+    color: #4b4b55;
+}
+
+/* =========================================================
+   Legends
+   ========================================================= */
+
+.legends {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+}
+
+.legend-group {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.legend-group strong {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 12px 8px 0;
+    gap: 5px;
+}
+
+.legend-item svg {
+    overflow: visible;
+}
+
+
+/* =========================================================
+   Node-link diagram
+   ========================================================= */
+
+.node {
+    cursor: grab;
+}
+
+.node:active {
+    cursor: grabbing;
+}
+
+.node:focus {
+    outline: none;
+    stroke: #000;
+}
+
+.node-label {
+    pointer-events: none;
+
+    font-family: "IBM Plex Serif", serif;
+    font-size: 11px;
+    font-weight: 500;
+
+    fill: #353044;
+
+    paint-order: stroke;
+    stroke: #faf9fd;
+    stroke-width: 3px;
+}
+
+.route {
+    cursor: help;
+}
+
+
+/* =========================================================
+   Adjacency matrix
+   ========================================================= */
+
+#matrix,
+.table-scroll {
+    overflow-x: auto;
+    margin-top: 18px;
+}
+
+#matrix svg {
+    display: block;
+}
+
+.matrix-label {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 11px;
+    font-weight: 500;
+
+    cursor: help;
+}
+
+.matrix-ruler {
+    fill: SlateBlue;
+    fill-opacity: 0.025;
+    stroke: none;
+}
+
+.matrix-label-active {
+    fill: SlateBlue;
+    font-weight: 700;
+    filter: drop-shadow(0 0 3px #bfb6ed);
+}
+
+
+/* =========================================================
+   Controls
+   ========================================================= */
+
+select {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 14px;
+
+    padding: 6px;
+
+    color: #38354b;
+
+    border: 1px solid #aaa;
+    border-radius: 4px;
+
+    background: white;
+}
+
+
+/* =========================================================
+   Tooltip
+   ========================================================= */
+
+/* Keep visual appearance consistent with style.css. */
+
+.tooltip {
+    z-index: 10;
+
+    max-width: 260px;
+
+    white-space: pre-line;
+
+    font-family: "IBM Plex Serif", serif;
+    font-size: 14px;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   Tables
+   ========================================================= */
+
+table {
+    font-family: "IBM Plex Serif", serif;
+}
+
+th {
+    text-align: left;
+
+    background: #f2effa;
+
+    font-weight: 600;
+}
+
+td {
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+#findings {
+    font-family: "IBM Plex Serif", serif;
+    font-size: 14px;
+
+    min-width: 600px;
+}
+
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    body {
+        margin: 24px auto;
+        padding: 0 12px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
