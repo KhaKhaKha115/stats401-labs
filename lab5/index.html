@@ -1,28 +1,59 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <title>Lab 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 5: Urban Transit Network</title>
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/lab5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-    <h1>Lab 5</h1>
-
-    <p>
-        Lab 5 will be added here.
-    </p>
-
-    <a href="../index.html">
-        Back to home
-    </a>
-
+    <header class="lab-header">
+        <a href="../index.html" class="back-link" aria-label="Back to all labs">←</a>
+        <h1>Lab 5 · Urban Transit Network</h1>
+    </header>
+    <main>
+        <p>A synthetic transit system with 50 stations, 50 undirected connections, and five districts. A connection represents direct travel between two stations. Positions show network structure, not geography.</p>
+        <p>Source: <a href="https://github.com/hiilab/stats-401/blob/main/Lab5.md">STATS 401 Lab 5</a> · <a href="../data/lab5_assignment_stations.csv">Station data</a> · <a href="../data/lab5_assignment_routes.csv">Route data</a></p>
+        <p><a href="lab5.js">View JavaScript source (tutorial Tasks 1–16)</a></p>
+        <p id="status" role="status">Loading station and route data…</p>
+        <section aria-labelledby="network-heading">
+            <h2 id="network-heading">1. Node-link visualization</h2>
+            <p>Drag stations to untangle connections. Hover or keyboard-focus a station to highlight its neighbors; hover a route for its travel time. Labels use station IDs (s7 = Station 7).</p>
+            <div id="legend" class="legends"></div>
+            <div id="chart"></div>
+            <h3>Node-link design</h3>
+            <p class="design-description">District colors distinguish administrative groups; circle area grows with passenger volume to emphasize busy stations. Borders distinguish local (thin), transfer (thick), and terminal (dashed) stations. Route color identifies service; thicker links mean longer travel, emphasizing time cost. Dragging separates overlaps, highlighting reveals neighbors, and tooltips give exact values. Layout position is not geographic.</p>
+        </section>
+        <section aria-labelledby="matrix-heading">
+            <h2 id="matrix-heading">2. Adjacency matrix</h2>
+            <p>Rows and columns use the same station order. Colored cells show direct connections; darker cells mean longer travel (2–16 minutes). Pale cells mean no connection. Each undirected route appears twice.</p>
+            <label for="matrix-order">Order stations by </label>
+            <select id="matrix-order"><option value="district">District, then station number</option><option value="id">Station number</option><option value="station_type">Station type, then station number</option></select>
+            <div id="matrix" tabindex="0" aria-label="Scrollable station adjacency matrix"></div>
+            <h3>Matrix design</h3>
+            <p class="design-description">Both axes list stations, initially grouped by district with colored labels. Cell color preserves route type and opacity increases with travel time. Empty cells remain pale; symmetry reflects undirected travel. Ordering exposes district blocks or the numbered backbone. Label tooltips preserve passenger volume and station type without crowding cells.</p>
+        </section>
+        <section aria-labelledby="findings-heading">
+            <h2 id="findings-heading">3. Network questions and findings</h2>
+            <div class="table-scroll"><table id="findings">
+                <thead><tr><th>Question</th><th>Support / view</th><th>Observation and visual evidence</th></tr></thead>
+                <tbody>
+                    <tr><td>Which stations appear central?</td><td>Partially · node-link</td><td>Neighbor highlighting shows 14 stations tied at three connections, including s4, s7, and s10. These are degree leaders; screen position does not establish centrality.</td></tr>
+                    <tr><td>Which districts are strongly connected?</td><td>Well · matrix</td><td>District blocks show East–South has the most direct connections (11), followed by Central–North and East–West (9 each).</td></tr>
+                    <tr><td>Where are transfer and terminal stations?</td><td>Well · node-link</td><td>Borders place both roles along the backbone and on branches: transfer s50 is a leaf, terminal s7 has three neighbors, and terminals s43, s46, s49 are isolated.</td></tr>
+                    <tr><td>Which stations have high passenger volume?</td><td>Well · node-link</td><td>The largest circles are s50 (9,850), s49 (9,677), and s48 (9,504); tooltips confirm volume despite the latter two being isolated.</td></tr>
+                    <tr><td>Where are the longest direct connections?</td><td>Well · both</td><td>The thickest links and darkest cells identify s7–s31 (16 minutes), s18–s34 (15), and s29–s50 (14); hover confirms values.</td></tr>
+                    <tr><td>Are route types concentrated?</td><td>Partially · matrix</td><td>Number ordering shows repeating Express–Shuttle–Metro backbone colors, with mixed shortcuts. No exclusive district concentration appears; subtle differences require counting.</td></tr>
+                </tbody>
+            </table></div>
+        </section>
+    </main>
+    <div id="tooltip" class="tooltip" role="tooltip"></div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="lab5.js"></script>
 </body>
-
 </html>
