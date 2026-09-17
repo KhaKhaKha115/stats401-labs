@@ -84,7 +84,7 @@
 
 body {
     font-family: "IBM Plex Serif", serif;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
     color: SlateBlue;
@@ -256,4 +256,62 @@ th,
 td {
     border: 1px solid #ccc;
     padding: 8px 12px;
+}
+
+.tooltip_lab6practice {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    background: white;
+    border: 1px solid #aaa;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+
+.lab6-body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    padding: 24px;
+
+}
+
+#treemap-legend {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#treemap1,
+#treemap2 {
+    width: 100%;
+
+}
+
+#treemap2 {
+    overflow-x: auto;
+}
+
+.design-description-6 {
+    width: 100%;
+    max-width: 1150px;
+
+    padding: 24px 30px;
+
+    background: white;
+
+    box-sizing: border-box;
+
+    line-height: 1.6;
+}
+
+.design-description-6 h2 {
+    margin-top: 0;
+    color: #5f55d9;
+}
+
+.design-description-6 p {
+    margin: 10px 0;
+    color: #333;
 }

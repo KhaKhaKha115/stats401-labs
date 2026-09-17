@@ -8,21 +8,52 @@
 
     <title>Lab 6</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
 </head>
 
-<body>
+<body class="lab6-body">
 
-    <h1>Lab 6</h1>
+    <div class="lab-header">
+        <a href="../index.html" class="back-link">←</a>
+        <h1>Lab 6: Hierarchical Data Visualization: Trees and Treemaps</h1>
+    </div>
 
-    <p>
-        Lab 6 will be added here.
-    </p>
+    <div id="treemap-legend" style="display: flex;gap:20px"></div> 
+    <div id="treemap1" class="treemap-card"></div>
+    <div id="treemap2" style="overflow-x:auto;" class="treemap-card"></div>
+    <div id="tooltip_lab6practice" class="tooltip"></div>
+    <div class="design-description-6">
+        <h2>Design Description</h2>
+        <h3>1. Why you chose those visual channels?</h3>
+        <p>
+            I use both rectangle size and numerical labels to encode GDP amount, 
+            while color encodes GDP status. GDP amount and GDP status are the two 
+            main attributes users need to understand from the visualization, so I 
+            chose visually effective channels that allow users to identify them 
+            quickly. Rectangle area provides an immediate comparison of GDP size, 
+            while the displayed GDP values support more precise comparisons. Color 
+            makes the three GDP statuses (Increase, Unchanged, and Decrease) easy to 
+            distinguish across countries.
+        </p>
+        <h3>2. How the two segmentation strategies change the appearance/readability of the hierarchy?</h3>
+        <p>
+            The two segmentation strategies organize the same hierarchy differently. 
+            Squarify produces more compact and relatively square rectangles, which 
+            makes country GDP sizes easier to compare. In this view, large continents 
+            such as North America and Asia occupy broad regions, while smaller 
+            continents such as Europe, South America, and Oceania are arranged in 
+            smaller regions around them. Binary subdivision creates stronger 
+            horizontal and vertical partitions. This makes the separation between 
+            continent and area groups more apparent, but some smaller countries 
+            become narrower rectangles, which can make labels harder to read.
+        </p>
+    </div>
 
-    <a href="../index.html">
-        Back to home
-    </a>
-
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="lab6.js"></script>
 </body>
 
 </html>
