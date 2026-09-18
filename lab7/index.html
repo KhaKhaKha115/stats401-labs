@@ -1,28 +1,74 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <title>Lab 7</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7 — Animated Commercial Network</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/lab7.css">
 </head>
+<body class="lab7-body">
+    <header class="site-header">
+        <a href="../index.html" class="back-link">←</a>
+        <h1>Lab 7: Temporal Data Visualization with D3</h1>
+    </header>
 
-<body>
-
-    <h1>Lab 7</h1>
-
-    <p>
-        Lab 7 will be added here.
-    </p>
-
-    <a href="../index.html">
-        Back to home
-    </a>
-
+    <main>
+        <section class="network-card" aria-labelledby="network-heading">
+            <div class="card-heading"><div><p class="eyebrow">DAILY NETWORK</p><h2 id="network-heading"><span id="day-label">Day 1</span> <span class="date" id="date-label">Jan 01, 2026</span></h2></div></div>
+            <div class="stats" aria-label="Current day summary">
+                <div><span id="active-count">—</span><small>active companies</small></div><div><span id="link-count">—</span><small>active links</small></div><div><span id="value-total">—</span><small>transaction value</small></div><div><span id="transaction-count">—</span><small>transactions</small></div>
+            </div>
+            <div id="network" class="network" aria-label="Animated commercial transaction network"></div>
+            <div class="controls" aria-label="Animation controls">
+                <div class="button-row"><button id="play" type="button" aria-pressed="false">▶ Play</button><button id="pause" class="active" type="button" aria-pressed="true">Ⅱ Pause</button><button id="reset" type="button">↺ Reset</button></div>
+                <label class="slider-label" for="time-slider"><span>Day 1</span><span>Day 60</span></label>
+                <input type="range" id="time-slider" min="1" max="60" step="1" value="1" aria-label="Select day 1 through 60">
+                <p class="control-note">Drag the slider to inspect a day, hover for details, or drag a company to reposition it.</p>
+            </div>
+        </section>
+        <aside class="legend-card" aria-labelledby="legend-heading">
+            <p class="eyebrow">HOW TO READ</p><h2 id="legend-heading">Visual encodings</h2>
+            <div class="legend-section"><h3>Companies</h3><p>Circle size = current transaction volume</p><div id="volume-legend" class="volume-legend"></div><p>Fill color = business sector</p><div id="sector-legend" class="swatches"></div><p>Spatial circle = region</p><div id="region-legend" class="swatches"></div></div>
+            <div class="legend-section"><h3>Relationships</h3><p>Color saturation = transaction amount</p><div id="amount-legend" class="amount-legend"></div><p>Transaction type:</p><div id="type-legend" class="relationship-styles"></div><p class="muted">New links fade in; inactive links fade out. Labels remain visible for every company, including inactive ones.</p></div>
+        </aside>
+        <section class="findings" aria-labelledby="findings-heading">
+            <p class="eyebrow">TEMPORAL NETWORK QUESTIONS</p><h2 id="findings-heading">What changes over time?</h2>
+            <div class="findings-table-wrapper">
+                <table class="findings-table">
+                    <colgroup><col><col></colgroup>
+                    <thead><tr><th scope="col">Question</th><th scope="col">Answer</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td class="finding-question"><span class="question-number">01</span><strong>How does overall network connectivity change across the 60 days?</strong></td>
+                            <td class="finding-answer">The first 15 days average 5.4 links and 8.5 active companies per day. In the final 15 days, those rise to 7.1 links and 9.5 active companies. This indicates that the network becomes denser and includes more active companies over time.</td>
+                        </tr>
+                        <tr>
+                            <td class="finding-question"><span class="question-number">02</span><strong>Which companies become more central or commercially active over time?</strong></td>
+                            <td class="finding-answer">Fusion Electronics has the largest cumulative activity at about $1.99M, followed by Ion Systems at about $1.49M and Cedar Retail at about $1.29M. Their frequent and high-value transactions make them the most commercially active companies in the network.</td>
+                        </tr>
+                        <tr>
+                            <td class="finding-question"><span class="question-number">03</span><strong>Are there periods when the network consists of relatively separate clusters?</strong></td>
+                            <td class="finding-answer">Yes. Days 1, 7, 11, 13, 17, and 19 contain only three links among six active companies. During these periods, the network is relatively fragmented into separate pairs or small components. Later days more frequently contain links that connect these groups.</td>
+                        </tr>
+                        <tr>
+                            <td class="finding-question"><span class="question-number">04</span><strong>Which commercial relationships appear, disappear, or become stronger over time?</strong></td>
+                            <td class="finding-answer">Several relationships repeatedly appear across the 60 days, while others are temporary and disappear after only a few periods. Some recurring relationships also accumulate substantial transaction value. Delta Components–Fusion Electronics appears especially strong, with about $440K in total transaction value. Ion Systems–Lumen Distribution and Apex Textiles–BlueRiver Logistics also show substantial repeated commercial activity.</td>
+                        </tr>
+                        <tr>
+                            <td class="finding-question"><span class="question-number">05</span><strong>Does the network become more or less cross-regional over time?</strong></td>
+                            <td class="finding-answer">The network becomes more cross-regional over time. Cross-region links account for about 55% of daily links during days 1–15, increasing to about 72% during days 46–60. This shows that companies in Asia, Europe, and North America become increasingly connected through cross-regional commercial relationships.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="method-note">Findings use daily link counts, incident transaction volume, recurring undirected pairs, and the regions in the provided synthetic datasets.</p>
+        </section>
+    </main>
+    <div id="tooltip" class="tooltip" role="tooltip"></div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script><script src="lab7.js"></script>
 </body>
-
 </html>
