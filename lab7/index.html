@@ -33,7 +33,10 @@
         <aside class="legend-card" aria-labelledby="legend-heading">
             <p class="eyebrow">HOW TO READ</p><h2 id="legend-heading">Visual encodings</h2>
             <div class="legend-section"><h3>Companies</h3><p>Circle size = current transaction volume</p><div id="volume-legend" class="volume-legend"></div><p>Fill color = business sector</p><div id="sector-legend" class="swatches"></div><p>Spatial circle = region</p><div id="region-legend" class="swatches"></div></div>
-            <div class="legend-section"><h3>Relationships</h3><p>Color saturation = transaction amount</p><div id="amount-legend" class="amount-legend"></div><p>Transaction type:</p><div id="type-legend" class="relationship-styles"></div><p class="muted">New links fade in; inactive links fade out. Labels remain visible for every company, including inactive ones.</p></div>
+            <div class="legend-section"><h3>Relationships</h3><p>Color saturation = transaction amount</p><div id="amount-legend" class="amount-legend"></div>
+                <p>Transaction type:</p><div id="type-legend" class="relationship-styles"></div>
+                <!-- <p class="muted">New links fade in; inactive links fade out. Labels remain visible for every company, including inactive ones.</p> -->
+            </div>
         </aside>
         <section class="findings" aria-labelledby="findings-heading">
             <p class="eyebrow">TEMPORAL NETWORK QUESTIONS</p><h2 id="findings-heading">What changes over time?</h2>
@@ -44,28 +47,27 @@
                     <tbody>
                         <tr>
                             <td class="finding-question"><span class="question-number">01</span><strong>How does overall network connectivity change across the 60 days?</strong></td>
-                            <td class="finding-answer">The first 15 days average 5.4 links and 8.5 active companies per day. In the final 15 days, those rise to 7.1 links and 9.5 active companies. This indicates that the network becomes denser and includes more active companies over time.</td>
+                            <td class="finding-answer">The network becomes more connected over time. On Day 1, only 6 companies are active with 3 links between them. By Day 60, all 12 companies are active with 9 links connecting them.</td>
                         </tr>
                         <tr>
                             <td class="finding-question"><span class="question-number">02</span><strong>Which companies become more central or commercially active over time?</strong></td>
-                            <td class="finding-answer">Fusion Electronics has the largest cumulative activity at about $1.99M, followed by Ion Systems at about $1.49M and Cedar Retail at about $1.29M. Their frequent and high-value transactions make them the most commercially active companies in the network.</td>
+                            <td class="finding-answer">Fusion Electronics, Ion Systems, and Cedar Retail become more active over time. They develop more connections with companies in other regions, and their circles become larger as their transaction volumes increase.</td>
                         </tr>
                         <tr>
                             <td class="finding-question"><span class="question-number">03</span><strong>Are there periods when the network consists of relatively separate clusters?</strong></td>
-                            <td class="finding-answer">Yes. Days 1, 7, 11, 13, 17, and 19 contain only three links among six active companies. During these periods, the network is relatively fragmented into separate pairs or small components. Later days more frequently contain links that connect these groups.</td>
+                            <td class="finding-answer">Yes: days 1, 7, 11, 13, 17, and 19 contain only three links among six active companies. During these periods, the network is relatively fragmented into separate pairs or small components. Later days more frequently contain links that connect these groups.</td>
                         </tr>
                         <tr>
                             <td class="finding-question"><span class="question-number">04</span><strong>Which commercial relationships appear, disappear, or become stronger over time?</strong></td>
-                            <td class="finding-answer">Several relationships repeatedly appear across the 60 days, while others are temporary and disappear after only a few periods. Some recurring relationships also accumulate substantial transaction value. Delta Components–Fusion Electronics appears especially strong, with about $440K in total transaction value. Ion Systems–Lumen Distribution and Apex Textiles–BlueRiver Logistics also show substantial repeated commercial activity.</td>
+                            <td class="finding-answer">Some relationships, such as Delta Components and Fusion Electronics, remain active throughout the 60 days. New connections appear after Day 20, while others disappear and reappear on different days. By the final 20 days, Cedar Retail and Ion Systems develop more connections with companies in other regions.</td>
                         </tr>
                         <tr>
                             <td class="finding-question"><span class="question-number">05</span><strong>Does the network become more or less cross-regional over time?</strong></td>
-                            <td class="finding-answer">The network becomes more cross-regional over time. Cross-region links account for about 55% of daily links during days 1–15, increasing to about 72% during days 46–60. This shows that companies in Asia, Europe, and North America become increasingly connected through cross-regional commercial relationships.</td>
+                            <td class="finding-answer">The network becomes more cross-regional over time. In the early days, companies mainly trade within their own regions or through a few connections with other regions. By Day 60, more links connect companies across Asia, Europe, and North America.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="method-note">Findings use daily link counts, incident transaction volume, recurring undirected pairs, and the regions in the provided synthetic datasets.</p>
         </section>
     </main>
     <div id="tooltip" class="tooltip" role="tooltip"></div>
