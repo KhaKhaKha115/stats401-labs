@@ -10,41 +10,42 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="lab8-body">
-    <header class="site-header lab8-header"><a href="../index.html" class="back-link" aria-label="Back to labs">←</a><div><p class="lab8-eyebrow">STATS 401 · LAB 8</p><h1>Web Text Data and Visualization</h1><p class="lab8-deck">Exploring the semantic and formal structure of a large university bulletin</p></div></header>
-    <nav class="lab8-nav" aria-label="Lab 8 sections"><a href="#corpus">Corpus</a><a href="#overview">Overview</a><a href="#semantic-map-section">Semantic map</a><a href="#matrix-section">Topic matrix</a><a href="#findings">Findings</a><a href="#design">Design</a></nav>
-
+    <header class="site-header lab8-header"><a href="../index.html" class="back-link" aria-label="Back to labs">←</a><div>
+        <h1>Lab8: Web Text Data and Visualization</h1>
+    </div>
+    </header>
     <main>
         <section id="corpus" class="lab8-section lab8-intro" aria-labelledby="corpus-heading">
-            <p class="lab8-eyebrow">01 · BULLETIN / CORPUS</p><h2 id="corpus-heading">Duke Kunshan University Undergraduate Instruction Bulletin</h2>
-            <div class="lab8-prose-grid"><p>This project examines the <em>Duke Kunshan University Undergraduate Instruction Bulletin, 2021–2022</em>, a 400-page record of the university’s curriculum, programs, policies, courses, and student services. One paragraph or short policy block is treated as one passage, while chapter, section, subsection, page, and original text are preserved.</p><dl class="lab8-source-list"><div><dt>Version</dt><dd>Academic year 2021–2022</dd></div><div><dt>Source</dt><dd><a href="https://dku-web-admissions.s3.cn-north-1.amazonaws.com.cn/dkumain/files/V2021-22_DKU_UG_Bulletin.pdf">Official DKU bulletin PDF</a></dd></div><div><dt>Accessed</dt><dd>September 22, 2026</dd></div><div><dt>Unit</dt><dd>Paragraph or short policy block</dd></div></dl></div>
-        </section>
-
-        <section id="overview" class="lab8-section" aria-labelledby="overview-heading">
-            <p class="lab8-eyebrow">02 · CORPUS OVERVIEW</p><h2 id="overview-heading">The bulletin at a glance</h2>
+            <h2 id="corpus-heading">Duke Kunshan University Undergraduate Instruction Bulletin</h2>
+            <div class="lab8-prose-grid"><p>This project examines the <strong>Duke Kunshan University Undergraduate Instruction Bulletin, 2021–2022</strong>, a 400-page record of the university’s curriculum, programs, policies, courses, and student services. One paragraph or short policy block is treated as one passage, while chapter, section, subsection, page, and original text are preserved. <a href="https://dku-web-admissions.s3.cn-north-1.amazonaws.com.cn/dkumain/files/V2021-22_DKU_UG_Bulletin.pdf"><strong>Source</strong></a></p></div>
             <div id="summary-stats" class="lab8-stats" aria-label="Corpus summary statistics"><div><strong>—</strong><span>passages</span></div><div><strong>—</strong><span>average words</span></div><div><strong>—</strong><span>formal sections</span></div><div><strong>—</strong><span>semantic topics</span></div></div>
-            <div class="lab8-overview-grid">
+
+        </section>
+        <div class="lab8-overview-grid">
                 <article class="lab8-card"><div class="lab8-card-heading"><div><h3>Passages by formal section</h3><p>Sorted by passage count; scroll to see every section.</p></div></div><div id="section-bar-chart" class="lab8-chart lab8-scroll-y" aria-live="polite"><p class="lab8-loading">Loading section counts…</p></div></article>
                 <article class="lab8-card"><div class="lab8-card-heading"><div><h3>Passage length distribution</h3><p>Number of words in each prepared passage.</p></div></div><div id="length-histogram" class="lab8-chart" aria-live="polite"><p class="lab8-loading">Loading passage lengths…</p></div></article>
-            </div>
-        </section>
+        </div>
 
         <section id="semantic-map-section" class="lab8-section" aria-labelledby="map-heading">
-            <p class="lab8-eyebrow">03 · SEMANTIC EMBEDDING MAP</p><h2 id="map-heading">Explore semantic neighborhoods</h2><p class="lab8-section-note">Each point is one passage. Position comes from UMAP, color shows its semantic topic, and area represents passage length. The axes have no independent semantic meaning.</p>
+            <h2 id="map-heading">Explore semantic neighborhoods</h2><p class="lab8-section-note">Each point is one passage. Position comes from UMAP, color shows its semantic topic, and area represents passage length. The axes have no independent semantic meaning.</p>
             <div class="lab8-controls" aria-label="Semantic map controls"><label>Search bulletin<input id="lab8-search" type="search" placeholder="Try credit, graduation, registration…"></label><label>Formal section<select id="lab8-section-filter"><option value="">All sections</option></select></label><label>Semantic topic<select id="lab8-topic-filter"><option value="">All topics</option></select></label><div class="lab8-button-group"><button id="lab8-clear-filters" type="button">Clear filters</button><button id="lab8-clear-selection" type="button">Clear selection</button><button id="lab8-reset-zoom" type="button">Reset zoom</button></div></div>
             <div class="lab8-status-row"><p id="lab8-match-count" role="status">Loading passages…</p><p>Scroll to zoom · drag to pan · click a point for details</p></div>
             <div class="lab8-map-layout"><article class="lab8-card lab8-map-card"><div id="semantic-map" class="lab8-chart" aria-live="polite"><p class="lab8-loading">Loading semantic map…</p></div><div id="topic-legend" class="lab8-topic-legend" aria-label="Semantic topic legend"></div></article><aside id="detail-panel" class="lab8-card lab8-detail-panel" aria-live="polite"><p class="lab8-eyebrow">PASSAGE DETAILS</p><h3>Select a passage</h3><p>Click a point to keep its metadata, original text, and five nearest semantic neighbors here.</p></aside></div>
         </section>
 
         <section id="matrix-section" class="lab8-section" aria-labelledby="matrix-heading">
-            <p class="lab8-eyebrow">04 · TOPIC × BULLETIN SECTION MATRIX</p><h2 id="matrix-heading">Where formal and semantic structures meet</h2><p class="lab8-section-note">Rows show every formal section and columns show all eight topics. Darker cells contain more passages. Click a cell to coordinate the matrix with the map.</p>
+            <h2 id="matrix-heading">Where formal and semantic structures meet</h2><p class="lab8-section-note">Rows show every formal section and columns show all eight topics. Darker cells contain more passages. Click a cell to coordinate the matrix with the map.</p>
             <div class="lab8-card"><div id="matrix-legend" class="lab8-matrix-legend" aria-label="Matrix count legend"></div><div id="topic-section-matrix" class="lab8-matrix-scroll" aria-live="polite"><p class="lab8-loading">Loading topic matrix…</p></div></div>
         </section>
 
-        <section id="findings" class="lab8-section" aria-labelledby="findings-heading"><p class="lab8-eyebrow">05 · SEMANTIC FINDINGS</p><h2 id="findings-heading">What the modeled corpus reveals</h2><div id="semantic-findings" class="lab8-findings-grid"><p class="lab8-loading">Calculating findings from the generated datasets…</p></div></section>
-
+        <section id="findings" class="lab8-section" aria-labelledby="findings-heading">
+            <h2 id="findings-heading">What the modeled corpus reveals</h2><div id="semantic-findings" class="lab8-findings-grid"><p class="lab8-loading">Calculating findings from the generated datasets…</p></div></section>
         <section id="design" class="lab8-section lab8-design" aria-labelledby="design-heading">
-            <p class="lab8-eyebrow">06 · DESIGN DESCRIPTION</p><h2 id="design-heading">From passages to coordinated views</h2>
-            <div class="lab8-prose-columns"><p>The 2,134 prepared passages were encoded with the <strong>all-MiniLM-L6-v2</strong> Sentence Transformer, with embedding normalization enabled. KMeans grouped the original 384-dimensional vectors—not the display coordinates—into eight clusters using <code>random_state=401</code> and <code>n_init="auto"</code>. Cluster labels were assigned only after inspecting characteristic TF-IDF terms and the five passages nearest each cluster centroid. UMAP then projected the embeddings to two dimensions with 15 neighbors, minimum distance 0.15, cosine distance, and random seed 401. The projection supports neighborhood exploration, but its x and y directions are intentionally unlabeled because they are not independent semantic variables.</p><p>On the map, position represents the UMAP projection, hue represents topic, and circle area represents passage word count. Low opacity keeps dense regions legible; hover and persistent selection provide exact context. Search, section, topic, and matrix-cell constraints are combined in one shared state so one interaction cannot erase another. Selecting a passage highlights its section–topic matrix cell and retrieves five neighbors precomputed with cosine similarity in the original embedding space. Conversely, selecting a matrix cell highlights its matching map passages. The matrix uses color intensity for count and reports within-section proportions in its tooltip. Together, the views let readers move between local semantic similarity and the bulletin’s authored hierarchy while retaining the original passage text for interpretation.</p></div>
+            <h2 id="design-heading">From passages to coordinated views</h2>
+            <div class="lab8-prose-columns">
+                <p>The 2,134 passages were encoded using <strong>all-MiniLM-L6-v2</strong>. KMeans grouped the original 384-dimensional embeddings into eight clusters, which were labeled using common TF-IDF terms and representative passages. UMAP then projected the embeddings into 2D for visualization. The x- and y-axes are left unlabeled because they do not represent specific semantic variables.</p>
+                <p>On the map, position shows semantic similarity, color shows topic, and circle size shows passage length. Search and filters work together, while clicking a passage highlights its section–topic matrix cell and shows five similar passages based on cosine similarity. Clicking a matrix cell also highlights matching passages on the map. Together, the two views connect semantic similarity with the bulletin’s original structure.</p>
+            </div>
         </section>
     </main>
     <div id="lab8-tooltip" class="tooltip lab8-tooltip" role="tooltip"></div>
