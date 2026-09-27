@@ -1,0 +1,641 @@
+section,cluster_name,count,section_total,proportion
+A 21st Century Curriculum,China and Asian Studies,0,1,0.0
+A 21st Century Curriculum,"Politics, Society and Global Studies",0,1,0.0
+A 21st Century Curriculum,Prerequisites and Course Sequences,0,1,0.0
+A 21st Century Curriculum,"Media, Arts and Literature",0,1,0.0
+A 21st Century Curriculum,Research and Interdisciplinary Study,0,1,0.0
+A 21st Century Curriculum,DKU Degrees and Transfer Credit,1,1,1.0
+A 21st Century Curriculum,STEM and Quantitative Courses,0,1,0.0
+A 21st Century Curriculum,"Academic Policies, Grades and Credits",0,1,0.0
+A Liberal Arts College Experience,China and Asian Studies,0,1,0.0
+A Liberal Arts College Experience,"Politics, Society and Global Studies",0,1,0.0
+A Liberal Arts College Experience,Prerequisites and Course Sequences,0,1,0.0
+A Liberal Arts College Experience,"Media, Arts and Literature",0,1,0.0
+A Liberal Arts College Experience,Research and Interdisciplinary Study,0,1,0.0
+A Liberal Arts College Experience,DKU Degrees and Transfer Credit,1,1,1.0
+A Liberal Arts College Experience,STEM and Quantitative Courses,0,1,0.0
+A Liberal Arts College Experience,"Academic Policies, Grades and Credits",0,1,0.0
+Academic Advising,China and Asian Studies,0,4,0.0
+Academic Advising,"Politics, Society and Global Studies",0,4,0.0
+Academic Advising,Prerequisites and Course Sequences,0,4,0.0
+Academic Advising,"Media, Arts and Literature",0,4,0.0
+Academic Advising,Research and Interdisciplinary Study,2,4,0.5
+Academic Advising,DKU Degrees and Transfer Credit,2,4,0.5
+Academic Advising,STEM and Quantitative Courses,0,4,0.0
+Academic Advising,"Academic Policies, Grades and Credits",0,4,0.0
+Academic Integrity,China and Asian Studies,0,5,0.0
+Academic Integrity,"Politics, Society and Global Studies",0,5,0.0
+Academic Integrity,Prerequisites and Course Sequences,0,5,0.0
+Academic Integrity,"Media, Arts and Literature",0,5,0.0
+Academic Integrity,Research and Interdisciplinary Study,1,5,0.2
+Academic Integrity,DKU Degrees and Transfer Credit,2,5,0.4
+Academic Integrity,STEM and Quantitative Courses,0,5,0.0
+Academic Integrity,"Academic Policies, Grades and Credits",2,5,0.4
+Academic Recognition and Honors,China and Asian Studies,0,4,0.0
+Academic Recognition and Honors,"Politics, Society and Global Studies",0,4,0.0
+Academic Recognition and Honors,Prerequisites and Course Sequences,0,4,0.0
+Academic Recognition and Honors,"Media, Arts and Literature",0,4,0.0
+Academic Recognition and Honors,Research and Interdisciplinary Study,0,4,0.0
+Academic Recognition and Honors,DKU Degrees and Transfer Credit,1,4,0.25
+Academic Recognition and Honors,STEM and Quantitative Courses,0,4,0.0
+Academic Recognition and Honors,"Academic Policies, Grades and Credits",3,4,0.75
+Academic Resource Center,China and Asian Studies,0,5,0.0
+Academic Resource Center,"Politics, Society and Global Studies",0,5,0.0
+Academic Resource Center,Prerequisites and Course Sequences,0,5,0.0
+Academic Resource Center,"Media, Arts and Literature",0,5,0.0
+Academic Resource Center,Research and Interdisciplinary Study,4,5,0.8
+Academic Resource Center,DKU Degrees and Transfer Credit,0,5,0.0
+Academic Resource Center,STEM and Quantitative Courses,0,5,0.0
+Academic Resource Center,"Academic Policies, Grades and Credits",1,5,0.2
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond",China and Asian Studies,0,12,0.0
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond","Politics, Society and Global Studies",0,12,0.0
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond",Prerequisites and Course Sequences,0,12,0.0
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond","Media, Arts and Literature",0,12,0.0
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond",Research and Interdisciplinary Study,0,12,0.0
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond",DKU Degrees and Transfer Credit,0,12,0.0
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond",STEM and Quantitative Courses,0,12,0.0
+"Academic Warning, Probation, and Suspension for Students in the Class of 2025 and Beyond","Academic Policies, Grades and Credits",12,12,1.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024",China and Asian Studies,0,13,0.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024","Politics, Society and Global Studies",0,13,0.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024",Prerequisites and Course Sequences,0,13,0.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024","Media, Arts and Literature",0,13,0.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024",Research and Interdisciplinary Study,0,13,0.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024",DKU Degrees and Transfer Credit,0,13,0.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024",STEM and Quantitative Courses,0,13,0.0
+"Academic Warning, Probation, and Suspension for Students in the Classes of 2022-2024","Academic Policies, Grades and Credits",13,13,1.0
+Accommodations,China and Asian Studies,0,3,0.0
+Accommodations,"Politics, Society and Global Studies",0,3,0.0
+Accommodations,Prerequisites and Course Sequences,0,3,0.0
+Accommodations,"Media, Arts and Literature",0,3,0.0
+Accommodations,Research and Interdisciplinary Study,1,3,0.3333333333333333
+Accommodations,DKU Degrees and Transfer Credit,0,3,0.0
+Accommodations,STEM and Quantitative Courses,0,3,0.0
+Accommodations,"Academic Policies, Grades and Credits",2,3,0.6666666666666666
+Animating Principles,China and Asian Studies,0,9,0.0
+Animating Principles,"Politics, Society and Global Studies",4,9,0.4444444444444444
+Animating Principles,Prerequisites and Course Sequences,0,9,0.0
+Animating Principles,"Media, Arts and Literature",0,9,0.0
+Animating Principles,Research and Interdisciplinary Study,4,9,0.4444444444444444
+Animating Principles,DKU Degrees and Transfer Credit,1,9,0.1111111111111111
+Animating Principles,STEM and Quantitative Courses,0,9,0.0
+Animating Principles,"Academic Policies, Grades and Credits",0,9,0.0
+Application Requirements,China and Asian Studies,2,28,0.07142857142857142
+Application Requirements,"Politics, Society and Global Studies",0,28,0.0
+Application Requirements,Prerequisites and Course Sequences,0,28,0.0
+Application Requirements,"Media, Arts and Literature",0,28,0.0
+Application Requirements,Research and Interdisciplinary Study,5,28,0.17857142857142858
+Application Requirements,DKU Degrees and Transfer Credit,1,28,0.03571428571428571
+Application Requirements,STEM and Quantitative Courses,1,28,0.03571428571428571
+Application Requirements,"Academic Policies, Grades and Credits",19,28,0.6785714285714286
+Application Timelines,China and Asian Studies,4,23,0.17391304347826086
+Application Timelines,"Politics, Society and Global Studies",0,23,0.0
+Application Timelines,Prerequisites and Course Sequences,0,23,0.0
+Application Timelines,"Media, Arts and Literature",0,23,0.0
+Application Timelines,Research and Interdisciplinary Study,0,23,0.0
+Application Timelines,DKU Degrees and Transfer Credit,1,23,0.043478260869565216
+Application Timelines,STEM and Quantitative Courses,1,23,0.043478260869565216
+Application Timelines,"Academic Policies, Grades and Credits",17,23,0.7391304347826086
+Arts and Culture,China and Asian Studies,0,1,0.0
+Arts and Culture,"Politics, Society and Global Studies",0,1,0.0
+Arts and Culture,Prerequisites and Course Sequences,0,1,0.0
+Arts and Culture,"Media, Arts and Literature",0,1,0.0
+Arts and Culture,Research and Interdisciplinary Study,0,1,0.0
+Arts and Culture,DKU Degrees and Transfer Credit,1,1,1.0
+Arts and Culture,STEM and Quantitative Courses,0,1,0.0
+Arts and Culture,"Academic Policies, Grades and Credits",0,1,0.0
+Athletics & University Sports,China and Asian Studies,0,5,0.0
+Athletics & University Sports,"Politics, Society and Global Studies",0,5,0.0
+Athletics & University Sports,Prerequisites and Course Sequences,0,5,0.0
+Athletics & University Sports,"Media, Arts and Literature",0,5,0.0
+Athletics & University Sports,Research and Interdisciplinary Study,3,5,0.6
+Athletics & University Sports,DKU Degrees and Transfer Credit,2,5,0.4
+Athletics & University Sports,STEM and Quantitative Courses,0,5,0.0
+Athletics & University Sports,"Academic Policies, Grades and Credits",0,5,0.0
+Blue Oasis Student Center,China and Asian Studies,0,2,0.0
+Blue Oasis Student Center,"Politics, Society and Global Studies",0,2,0.0
+Blue Oasis Student Center,Prerequisites and Course Sequences,0,2,0.0
+Blue Oasis Student Center,"Media, Arts and Literature",0,2,0.0
+Blue Oasis Student Center,Research and Interdisciplinary Study,2,2,1.0
+Blue Oasis Student Center,DKU Degrees and Transfer Credit,0,2,0.0
+Blue Oasis Student Center,STEM and Quantitative Courses,0,2,0.0
+Blue Oasis Student Center,"Academic Policies, Grades and Credits",0,2,0.0
+Campus Engagement,China and Asian Studies,0,1,0.0
+Campus Engagement,"Politics, Society and Global Studies",0,1,0.0
+Campus Engagement,Prerequisites and Course Sequences,0,1,0.0
+Campus Engagement,"Media, Arts and Literature",0,1,0.0
+Campus Engagement,Research and Interdisciplinary Study,0,1,0.0
+Campus Engagement,DKU Degrees and Transfer Credit,1,1,1.0
+Campus Engagement,STEM and Quantitative Courses,0,1,0.0
+Campus Engagement,"Academic Policies, Grades and Credits",0,1,0.0
+Campus Health Clinic,China and Asian Studies,0,1,0.0
+Campus Health Clinic,"Politics, Society and Global Studies",0,1,0.0
+Campus Health Clinic,Prerequisites and Course Sequences,0,1,0.0
+Campus Health Clinic,"Media, Arts and Literature",0,1,0.0
+Campus Health Clinic,Research and Interdisciplinary Study,1,1,1.0
+Campus Health Clinic,DKU Degrees and Transfer Credit,0,1,0.0
+Campus Health Clinic,STEM and Quantitative Courses,0,1,0.0
+Campus Health Clinic,"Academic Policies, Grades and Credits",0,1,0.0
+Campus Programs,China and Asian Studies,0,3,0.0
+Campus Programs,"Politics, Society and Global Studies",0,3,0.0
+Campus Programs,Prerequisites and Course Sequences,0,3,0.0
+Campus Programs,"Media, Arts and Literature",0,3,0.0
+Campus Programs,Research and Interdisciplinary Study,0,3,0.0
+Campus Programs,DKU Degrees and Transfer Credit,3,3,1.0
+Campus Programs,STEM and Quantitative Courses,0,3,0.0
+Campus Programs,"Academic Policies, Grades and Credits",0,3,0.0
+Career Services,China and Asian Studies,1,12,0.08333333333333333
+Career Services,"Politics, Society and Global Studies",0,12,0.0
+Career Services,Prerequisites and Course Sequences,0,12,0.0
+Career Services,"Media, Arts and Literature",0,12,0.0
+Career Services,Research and Interdisciplinary Study,6,12,0.5
+Career Services,DKU Degrees and Transfer Credit,4,12,0.3333333333333333
+Career Services,STEM and Quantitative Courses,0,12,0.0
+Career Services,"Academic Policies, Grades and Credits",1,12,0.08333333333333333
+Changes in Status,China and Asian Studies,0,12,0.0
+Changes in Status,"Politics, Society and Global Studies",0,12,0.0
+Changes in Status,Prerequisites and Course Sequences,0,12,0.0
+Changes in Status,"Media, Arts and Literature",0,12,0.0
+Changes in Status,Research and Interdisciplinary Study,0,12,0.0
+Changes in Status,DKU Degrees and Transfer Credit,5,12,0.4166666666666667
+Changes in Status,STEM and Quantitative Courses,0,12,0.0
+Changes in Status,"Academic Policies, Grades and Credits",7,12,0.5833333333333334
+Chapter Introduction / Front Matter,China and Asian Studies,0,84,0.0
+Chapter Introduction / Front Matter,"Politics, Society and Global Studies",3,84,0.03571428571428571
+Chapter Introduction / Front Matter,Prerequisites and Course Sequences,0,84,0.0
+Chapter Introduction / Front Matter,"Media, Arts and Literature",0,84,0.0
+Chapter Introduction / Front Matter,Research and Interdisciplinary Study,7,84,0.08333333333333333
+Chapter Introduction / Front Matter,DKU Degrees and Transfer Credit,20,84,0.23809523809523808
+Chapter Introduction / Front Matter,STEM and Quantitative Courses,2,84,0.023809523809523808
+Chapter Introduction / Front Matter,"Academic Policies, Grades and Credits",52,84,0.6190476190476191
+Chinese Student Services and Student Mobility,China and Asian Studies,0,2,0.0
+Chinese Student Services and Student Mobility,"Politics, Society and Global Studies",0,2,0.0
+Chinese Student Services and Student Mobility,Prerequisites and Course Sequences,0,2,0.0
+Chinese Student Services and Student Mobility,"Media, Arts and Literature",0,2,0.0
+Chinese Student Services and Student Mobility,Research and Interdisciplinary Study,0,2,0.0
+Chinese Student Services and Student Mobility,DKU Degrees and Transfer Credit,2,2,1.0
+Chinese Student Services and Student Mobility,STEM and Quantitative Courses,0,2,0.0
+Chinese Student Services and Student Mobility,"Academic Policies, Grades and Credits",0,2,0.0
+Class Attendance and Missed Work,China and Asian Studies,0,3,0.0
+Class Attendance and Missed Work,"Politics, Society and Global Studies",0,3,0.0
+Class Attendance and Missed Work,Prerequisites and Course Sequences,0,3,0.0
+Class Attendance and Missed Work,"Media, Arts and Literature",0,3,0.0
+Class Attendance and Missed Work,Research and Interdisciplinary Study,0,3,0.0
+Class Attendance and Missed Work,DKU Degrees and Transfer Credit,0,3,0.0
+Class Attendance and Missed Work,STEM and Quantitative Courses,0,3,0.0
+Class Attendance and Missed Work,"Academic Policies, Grades and Credits",3,3,1.0
+Class Scheduling,China and Asian Studies,0,1,0.0
+Class Scheduling,"Politics, Society and Global Studies",0,1,0.0
+Class Scheduling,Prerequisites and Course Sequences,0,1,0.0
+Class Scheduling,"Media, Arts and Literature",0,1,0.0
+Class Scheduling,Research and Interdisciplinary Study,0,1,0.0
+Class Scheduling,DKU Degrees and Transfer Credit,0,1,0.0
+Class Scheduling,STEM and Quantitative Courses,0,1,0.0
+Class Scheduling,"Academic Policies, Grades and Credits",1,1,1.0
+Compliance with Academic Regulations,China and Asian Studies,0,1,0.0
+Compliance with Academic Regulations,"Politics, Society and Global Studies",0,1,0.0
+Compliance with Academic Regulations,Prerequisites and Course Sequences,0,1,0.0
+Compliance with Academic Regulations,"Media, Arts and Literature",0,1,0.0
+Compliance with Academic Regulations,Research and Interdisciplinary Study,0,1,0.0
+Compliance with Academic Regulations,DKU Degrees and Transfer Credit,1,1,1.0
+Compliance with Academic Regulations,STEM and Quantitative Courses,0,1,0.0
+Compliance with Academic Regulations,"Academic Policies, Grades and Credits",0,1,0.0
+Counseling and Psychological Services (CAPS),China and Asian Studies,0,2,0.0
+Counseling and Psychological Services (CAPS),"Politics, Society and Global Studies",0,2,0.0
+Counseling and Psychological Services (CAPS),Prerequisites and Course Sequences,0,2,0.0
+Counseling and Psychological Services (CAPS),"Media, Arts and Literature",0,2,0.0
+Counseling and Psychological Services (CAPS),Research and Interdisciplinary Study,0,2,0.0
+Counseling and Psychological Services (CAPS),DKU Degrees and Transfer Credit,2,2,1.0
+Counseling and Psychological Services (CAPS),STEM and Quantitative Courses,0,2,0.0
+Counseling and Psychological Services (CAPS),"Academic Policies, Grades and Credits",0,2,0.0
+Course Audit,China and Asian Studies,0,1,0.0
+Course Audit,"Politics, Society and Global Studies",0,1,0.0
+Course Audit,Prerequisites and Course Sequences,0,1,0.0
+Course Audit,"Media, Arts and Literature",0,1,0.0
+Course Audit,Research and Interdisciplinary Study,0,1,0.0
+Course Audit,DKU Degrees and Transfer Credit,1,1,1.0
+Course Audit,STEM and Quantitative Courses,0,1,0.0
+Course Audit,"Academic Policies, Grades and Credits",0,1,0.0
+Course Descriptions,China and Asian Studies,99,820,0.12073170731707317
+Course Descriptions,"Politics, Society and Global Studies",195,820,0.23780487804878048
+Course Descriptions,Prerequisites and Course Sequences,171,820,0.20853658536585365
+Course Descriptions,"Media, Arts and Literature",59,820,0.07195121951219512
+Course Descriptions,Research and Interdisciplinary Study,246,820,0.3
+Course Descriptions,DKU Degrees and Transfer Credit,4,820,0.004878048780487805
+Course Descriptions,STEM and Quantitative Courses,15,820,0.018292682926829267
+Course Descriptions,"Academic Policies, Grades and Credits",31,820,0.03780487804878049
+Course Repeat,China and Asian Studies,0,6,0.0
+Course Repeat,"Politics, Society and Global Studies",0,6,0.0
+Course Repeat,Prerequisites and Course Sequences,0,6,0.0
+Course Repeat,"Media, Arts and Literature",0,6,0.0
+Course Repeat,Research and Interdisciplinary Study,0,6,0.0
+Course Repeat,DKU Degrees and Transfer Credit,2,6,0.3333333333333333
+Course Repeat,STEM and Quantitative Courses,0,6,0.0
+Course Repeat,"Academic Policies, Grades and Credits",4,6,0.6666666666666666
+Declaration of Major,China and Asian Studies,0,2,0.0
+Declaration of Major,"Politics, Society and Global Studies",0,2,0.0
+Declaration of Major,Prerequisites and Course Sequences,0,2,0.0
+Declaration of Major,"Media, Arts and Literature",0,2,0.0
+Declaration of Major,Research and Interdisciplinary Study,0,2,0.0
+Declaration of Major,DKU Degrees and Transfer Credit,2,2,1.0
+Declaration of Major,STEM and Quantitative Courses,0,2,0.0
+Declaration of Major,"Academic Policies, Grades and Credits",0,2,0.0
+Degree Requirements,China and Asian Studies,0,45,0.0
+Degree Requirements,"Politics, Society and Global Studies",0,45,0.0
+Degree Requirements,Prerequisites and Course Sequences,2,45,0.044444444444444446
+Degree Requirements,"Media, Arts and Literature",0,45,0.0
+Degree Requirements,Research and Interdisciplinary Study,18,45,0.4
+Degree Requirements,DKU Degrees and Transfer Credit,13,45,0.28888888888888886
+Degree Requirements,STEM and Quantitative Courses,2,45,0.044444444444444446
+Degree Requirements,"Academic Policies, Grades and Credits",10,45,0.2222222222222222
+Dual Degrees,China and Asian Studies,0,1,0.0
+Dual Degrees,"Politics, Society and Global Studies",0,1,0.0
+Dual Degrees,Prerequisites and Course Sequences,0,1,0.0
+Dual Degrees,"Media, Arts and Literature",0,1,0.0
+Dual Degrees,Research and Interdisciplinary Study,0,1,0.0
+Dual Degrees,DKU Degrees and Transfer Credit,1,1,1.0
+Dual Degrees,STEM and Quantitative Courses,0,1,0.0
+Dual Degrees,"Academic Policies, Grades and Credits",0,1,0.0
+Duke Kunshan University Community Standard,China and Asian Studies,0,1,0.0
+Duke Kunshan University Community Standard,"Politics, Society and Global Studies",0,1,0.0
+Duke Kunshan University Community Standard,Prerequisites and Course Sequences,0,1,0.0
+Duke Kunshan University Community Standard,"Media, Arts and Literature",0,1,0.0
+Duke Kunshan University Community Standard,Research and Interdisciplinary Study,0,1,0.0
+Duke Kunshan University Community Standard,DKU Degrees and Transfer Credit,1,1,1.0
+Duke Kunshan University Community Standard,STEM and Quantitative Courses,0,1,0.0
+Duke Kunshan University Community Standard,"Academic Policies, Grades and Credits",0,1,0.0
+Education Records,China and Asian Studies,0,4,0.0
+Education Records,"Politics, Society and Global Studies",0,4,0.0
+Education Records,Prerequisites and Course Sequences,0,4,0.0
+Education Records,"Media, Arts and Literature",0,4,0.0
+Education Records,Research and Interdisciplinary Study,0,4,0.0
+Education Records,DKU Degrees and Transfer Credit,3,4,0.75
+Education Records,STEM and Quantitative Courses,0,4,0.0
+Education Records,"Academic Policies, Grades and Credits",1,4,0.25
+Eligibility for Courses,China and Asian Studies,0,4,0.0
+Eligibility for Courses,"Politics, Society and Global Studies",0,4,0.0
+Eligibility for Courses,Prerequisites and Course Sequences,0,4,0.0
+Eligibility for Courses,"Media, Arts and Literature",0,4,0.0
+Eligibility for Courses,Research and Interdisciplinary Study,0,4,0.0
+Eligibility for Courses,DKU Degrees and Transfer Credit,1,4,0.25
+Eligibility for Courses,STEM and Quantitative Courses,0,4,0.0
+Eligibility for Courses,"Academic Policies, Grades and Credits",3,4,0.75
+Entrance Credit and Placement,China and Asian Studies,3,19,0.15789473684210525
+Entrance Credit and Placement,"Politics, Society and Global Studies",0,19,0.0
+Entrance Credit and Placement,Prerequisites and Course Sequences,0,19,0.0
+Entrance Credit and Placement,"Media, Arts and Literature",0,19,0.0
+Entrance Credit and Placement,Research and Interdisciplinary Study,1,19,0.05263157894736842
+Entrance Credit and Placement,DKU Degrees and Transfer Credit,10,19,0.5263157894736842
+Entrance Credit and Placement,STEM and Quantitative Courses,0,19,0.0
+Entrance Credit and Placement,"Academic Policies, Grades and Credits",5,19,0.2631578947368421
+Estimated Expenses,China and Asian Studies,2,17,0.11764705882352941
+Estimated Expenses,"Politics, Society and Global Studies",0,17,0.0
+Estimated Expenses,Prerequisites and Course Sequences,0,17,0.0
+Estimated Expenses,"Media, Arts and Literature",0,17,0.0
+Estimated Expenses,Research and Interdisciplinary Study,0,17,0.0
+Estimated Expenses,DKU Degrees and Transfer Credit,2,17,0.11764705882352941
+Estimated Expenses,STEM and Quantitative Courses,4,17,0.23529411764705882
+Estimated Expenses,"Academic Policies, Grades and Credits",9,17,0.5294117647058824
+Exclusion of Disruptive Students from a Course,China and Asian Studies,0,2,0.0
+Exclusion of Disruptive Students from a Course,"Politics, Society and Global Studies",0,2,0.0
+Exclusion of Disruptive Students from a Course,Prerequisites and Course Sequences,0,2,0.0
+Exclusion of Disruptive Students from a Course,"Media, Arts and Literature",0,2,0.0
+Exclusion of Disruptive Students from a Course,Research and Interdisciplinary Study,1,2,0.5
+Exclusion of Disruptive Students from a Course,DKU Degrees and Transfer Credit,0,2,0.0
+Exclusion of Disruptive Students from a Course,STEM and Quantitative Courses,0,2,0.0
+Exclusion of Disruptive Students from a Course,"Academic Policies, Grades and Credits",1,2,0.5
+Final Examinations,China and Asian Studies,0,3,0.0
+Final Examinations,"Politics, Society and Global Studies",0,3,0.0
+Final Examinations,Prerequisites and Course Sequences,0,3,0.0
+Final Examinations,"Media, Arts and Literature",0,3,0.0
+Final Examinations,Research and Interdisciplinary Study,0,3,0.0
+Final Examinations,DKU Degrees and Transfer Credit,0,3,0.0
+Final Examinations,STEM and Quantitative Courses,0,3,0.0
+Final Examinations,"Academic Policies, Grades and Credits",3,3,1.0
+Grade Review Procedure,China and Asian Studies,0,5,0.0
+Grade Review Procedure,"Politics, Society and Global Studies",0,5,0.0
+Grade Review Procedure,Prerequisites and Course Sequences,0,5,0.0
+Grade Review Procedure,"Media, Arts and Literature",0,5,0.0
+Grade Review Procedure,Research and Interdisciplinary Study,0,5,0.0
+Grade Review Procedure,DKU Degrees and Transfer Credit,1,5,0.2
+Grade Review Procedure,STEM and Quantitative Courses,0,5,0.0
+Grade Review Procedure,"Academic Policies, Grades and Credits",4,5,0.8
+Grading and Grade Requirements,China and Asian Studies,0,19,0.0
+Grading and Grade Requirements,"Politics, Society and Global Studies",0,19,0.0
+Grading and Grade Requirements,Prerequisites and Course Sequences,0,19,0.0
+Grading and Grade Requirements,"Media, Arts and Literature",0,19,0.0
+Grading and Grade Requirements,Research and Interdisciplinary Study,0,19,0.0
+Grading and Grade Requirements,DKU Degrees and Transfer Credit,4,19,0.21052631578947367
+Grading and Grade Requirements,STEM and Quantitative Courses,0,19,0.0
+Grading and Grade Requirements,"Academic Policies, Grades and Credits",15,19,0.7894736842105263
+Graduation and Commencement,China and Asian Studies,0,1,0.0
+Graduation and Commencement,"Politics, Society and Global Studies",0,1,0.0
+Graduation and Commencement,Prerequisites and Course Sequences,0,1,0.0
+Graduation and Commencement,"Media, Arts and Literature",0,1,0.0
+Graduation and Commencement,Research and Interdisciplinary Study,0,1,0.0
+Graduation and Commencement,DKU Degrees and Transfer Credit,0,1,0.0
+Graduation and Commencement,STEM and Quantitative Courses,0,1,0.0
+Graduation and Commencement,"Academic Policies, Grades and Credits",1,1,1.0
+Host Family Program,China and Asian Studies,0,1,0.0
+Host Family Program,"Politics, Society and Global Studies",0,1,0.0
+Host Family Program,Prerequisites and Course Sequences,0,1,0.0
+Host Family Program,"Media, Arts and Literature",0,1,0.0
+Host Family Program,Research and Interdisciplinary Study,0,1,0.0
+Host Family Program,DKU Degrees and Transfer Credit,1,1,1.0
+Host Family Program,STEM and Quantitative Courses,0,1,0.0
+Host Family Program,"Academic Policies, Grades and Credits",0,1,0.0
+How to Apply,China and Asian Studies,0,1,0.0
+How to Apply,"Politics, Society and Global Studies",0,1,0.0
+How to Apply,Prerequisites and Course Sequences,0,1,0.0
+How to Apply,"Media, Arts and Literature",0,1,0.0
+How to Apply,Research and Interdisciplinary Study,0,1,0.0
+How to Apply,DKU Degrees and Transfer Credit,1,1,1.0
+How to Apply,STEM and Quantitative Courses,0,1,0.0
+How to Apply,"Academic Policies, Grades and Credits",0,1,0.0
+Incomplete Coursework and Excused Absence from Final Exam,China and Asian Studies,0,3,0.0
+Incomplete Coursework and Excused Absence from Final Exam,"Politics, Society and Global Studies",0,3,0.0
+Incomplete Coursework and Excused Absence from Final Exam,Prerequisites and Course Sequences,0,3,0.0
+Incomplete Coursework and Excused Absence from Final Exam,"Media, Arts and Literature",0,3,0.0
+Incomplete Coursework and Excused Absence from Final Exam,Research and Interdisciplinary Study,0,3,0.0
+Incomplete Coursework and Excused Absence from Final Exam,DKU Degrees and Transfer Credit,0,3,0.0
+Incomplete Coursework and Excused Absence from Final Exam,STEM and Quantitative Courses,0,3,0.0
+Incomplete Coursework and Excused Absence from Final Exam,"Academic Policies, Grades and Credits",3,3,1.0
+Independent Studies,China and Asian Studies,0,2,0.0
+Independent Studies,"Politics, Society and Global Studies",0,2,0.0
+Independent Studies,Prerequisites and Course Sequences,0,2,0.0
+Independent Studies,"Media, Arts and Literature",0,2,0.0
+Independent Studies,Research and Interdisciplinary Study,2,2,1.0
+Independent Studies,DKU Degrees and Transfer Credit,0,2,0.0
+Independent Studies,STEM and Quantitative Courses,0,2,0.0
+Independent Studies,"Academic Policies, Grades and Credits",0,2,0.0
+International Student Services,China and Asian Studies,0,2,0.0
+International Student Services,"Politics, Society and Global Studies",0,2,0.0
+International Student Services,Prerequisites and Course Sequences,0,2,0.0
+International Student Services,"Media, Arts and Literature",0,2,0.0
+International Student Services,Research and Interdisciplinary Study,0,2,0.0
+International Student Services,DKU Degrees and Transfer Credit,2,2,1.0
+International Student Services,STEM and Quantitative Courses,0,2,0.0
+International Student Services,"Academic Policies, Grades and Credits",0,2,0.0
+Key Components,China and Asian Studies,1,30,0.03333333333333333
+Key Components,"Politics, Society and Global Studies",0,30,0.0
+Key Components,Prerequisites and Course Sequences,3,30,0.1
+Key Components,"Media, Arts and Literature",0,30,0.0
+Key Components,Research and Interdisciplinary Study,11,30,0.36666666666666664
+Key Components,DKU Degrees and Transfer Credit,3,30,0.1
+Key Components,STEM and Quantitative Courses,2,30,0.06666666666666667
+Key Components,"Academic Policies, Grades and Credits",10,30,0.3333333333333333
+Leadership Development,China and Asian Studies,0,1,0.0
+Leadership Development,"Politics, Society and Global Studies",0,1,0.0
+Leadership Development,Prerequisites and Course Sequences,0,1,0.0
+Leadership Development,"Media, Arts and Literature",0,1,0.0
+Leadership Development,Research and Interdisciplinary Study,1,1,1.0
+Leadership Development,DKU Degrees and Transfer Credit,0,1,0.0
+Leadership Development,STEM and Quantitative Courses,0,1,0.0
+Leadership Development,"Academic Policies, Grades and Credits",0,1,0.0
+Majors (listed in alphabetical order),China and Asian Studies,64,740,0.08648648648648649
+Majors (listed in alphabetical order),"Politics, Society and Global Studies",176,740,0.23783783783783785
+Majors (listed in alphabetical order),Prerequisites and Course Sequences,39,740,0.052702702702702706
+Majors (listed in alphabetical order),"Media, Arts and Literature",84,740,0.11351351351351352
+Majors (listed in alphabetical order),Research and Interdisciplinary Study,59,740,0.07972972972972973
+Majors (listed in alphabetical order),DKU Degrees and Transfer Credit,0,740,0.0
+Majors (listed in alphabetical order),STEM and Quantitative Courses,303,740,0.40945945945945944
+Majors (listed in alphabetical order),"Academic Policies, Grades and Credits",15,740,0.02027027027027027
+Mission Statement,China and Asian Studies,0,1,0.0
+Mission Statement,"Politics, Society and Global Studies",0,1,0.0
+Mission Statement,Prerequisites and Course Sequences,0,1,0.0
+Mission Statement,"Media, Arts and Literature",0,1,0.0
+Mission Statement,Research and Interdisciplinary Study,0,1,0.0
+Mission Statement,DKU Degrees and Transfer Credit,1,1,1.0
+Mission Statement,STEM and Quantitative Courses,0,1,0.0
+Mission Statement,"Academic Policies, Grades and Credits",0,1,0.0
+Notification and Responses,China and Asian Studies,0,1,0.0
+Notification and Responses,"Politics, Society and Global Studies",0,1,0.0
+Notification and Responses,Prerequisites and Course Sequences,0,1,0.0
+Notification and Responses,"Media, Arts and Literature",0,1,0.0
+Notification and Responses,Research and Interdisciplinary Study,0,1,0.0
+Notification and Responses,DKU Degrees and Transfer Credit,0,1,0.0
+Notification and Responses,STEM and Quantitative Courses,0,1,0.0
+Notification and Responses,"Academic Policies, Grades and Credits",1,1,1.0
+Notification of Intention to Graduate,China and Asian Studies,0,1,0.0
+Notification of Intention to Graduate,"Politics, Society and Global Studies",0,1,0.0
+Notification of Intention to Graduate,Prerequisites and Course Sequences,0,1,0.0
+Notification of Intention to Graduate,"Media, Arts and Literature",0,1,0.0
+Notification of Intention to Graduate,Research and Interdisciplinary Study,0,1,0.0
+Notification of Intention to Graduate,DKU Degrees and Transfer Credit,1,1,1.0
+Notification of Intention to Graduate,STEM and Quantitative Courses,0,1,0.0
+Notification of Intention to Graduate,"Academic Policies, Grades and Credits",0,1,0.0
+Office of Global Education and Study Away,China and Asian Studies,0,19,0.0
+Office of Global Education and Study Away,"Politics, Society and Global Studies",0,19,0.0
+Office of Global Education and Study Away,Prerequisites and Course Sequences,0,19,0.0
+Office of Global Education and Study Away,"Media, Arts and Literature",0,19,0.0
+Office of Global Education and Study Away,Research and Interdisciplinary Study,0,19,0.0
+Office of Global Education and Study Away,DKU Degrees and Transfer Credit,15,19,0.7894736842105263
+Office of Global Education and Study Away,STEM and Quantitative Courses,0,19,0.0
+Office of Global Education and Study Away,"Academic Policies, Grades and Credits",4,19,0.21052631578947367
+Overview,China and Asian Studies,0,4,0.0
+Overview,"Politics, Society and Global Studies",0,4,0.0
+Overview,Prerequisites and Course Sequences,0,4,0.0
+Overview,"Media, Arts and Literature",0,4,0.0
+Overview,Research and Interdisciplinary Study,2,4,0.5
+Overview,DKU Degrees and Transfer Credit,2,4,0.5
+Overview,STEM and Quantitative Courses,0,4,0.0
+Overview,"Academic Policies, Grades and Credits",0,4,0.0
+Partners,China and Asian Studies,1,8,0.125
+Partners,"Politics, Society and Global Studies",0,8,0.0
+Partners,Prerequisites and Course Sequences,0,8,0.0
+Partners,"Media, Arts and Literature",0,8,0.0
+Partners,Research and Interdisciplinary Study,1,8,0.125
+Partners,DKU Degrees and Transfer Credit,6,8,0.75
+Partners,STEM and Quantitative Courses,0,8,0.0
+Partners,"Academic Policies, Grades and Credits",0,8,0.0
+Principles of Selection,China and Asian Studies,0,2,0.0
+Principles of Selection,"Politics, Society and Global Studies",0,2,0.0
+Principles of Selection,Prerequisites and Course Sequences,0,2,0.0
+Principles of Selection,"Media, Arts and Literature",0,2,0.0
+Principles of Selection,Research and Interdisciplinary Study,0,2,0.0
+Principles of Selection,DKU Degrees and Transfer Credit,2,2,1.0
+Principles of Selection,STEM and Quantitative Courses,0,2,0.0
+Principles of Selection,"Academic Policies, Grades and Credits",0,2,0.0
+Procedure for Resolution of Students' Academic Concerns,China and Asian Studies,0,5,0.0
+Procedure for Resolution of Students' Academic Concerns,"Politics, Society and Global Studies",0,5,0.0
+Procedure for Resolution of Students' Academic Concerns,Prerequisites and Course Sequences,0,5,0.0
+Procedure for Resolution of Students' Academic Concerns,"Media, Arts and Literature",0,5,0.0
+Procedure for Resolution of Students' Academic Concerns,Research and Interdisciplinary Study,1,5,0.2
+Procedure for Resolution of Students' Academic Concerns,DKU Degrees and Transfer Credit,1,5,0.2
+Procedure for Resolution of Students' Academic Concerns,STEM and Quantitative Courses,0,5,0.0
+Procedure for Resolution of Students' Academic Concerns,"Academic Policies, Grades and Credits",3,5,0.6
+Progress toward Degree,China and Asian Studies,0,8,0.0
+Progress toward Degree,"Politics, Society and Global Studies",0,8,0.0
+Progress toward Degree,Prerequisites and Course Sequences,0,8,0.0
+Progress toward Degree,"Media, Arts and Literature",0,8,0.0
+Progress toward Degree,Research and Interdisciplinary Study,0,8,0.0
+Progress toward Degree,DKU Degrees and Transfer Credit,1,8,0.125
+Progress toward Degree,STEM and Quantitative Courses,0,8,0.0
+Progress toward Degree,"Academic Policies, Grades and Credits",7,8,0.875
+Refund,China and Asian Studies,0,17,0.0
+Refund,"Politics, Society and Global Studies",0,17,0.0
+Refund,Prerequisites and Course Sequences,0,17,0.0
+Refund,"Media, Arts and Literature",0,17,0.0
+Refund,Research and Interdisciplinary Study,0,17,0.0
+Refund,DKU Degrees and Transfer Credit,0,17,0.0
+Refund,STEM and Quantitative Courses,1,17,0.058823529411764705
+Refund,"Academic Policies, Grades and Credits",16,17,0.9411764705882353
+Registration,China and Asian Studies,0,7,0.0
+Registration,"Politics, Society and Global Studies",0,7,0.0
+Registration,Prerequisites and Course Sequences,0,7,0.0
+Registration,"Media, Arts and Literature",0,7,0.0
+Registration,Research and Interdisciplinary Study,0,7,0.0
+Registration,DKU Degrees and Transfer Credit,1,7,0.14285714285714285
+Registration,STEM and Quantitative Courses,0,7,0.0
+Registration,"Academic Policies, Grades and Credits",6,7,0.8571428571428571
+Religious Holidays,China and Asian Studies,0,1,0.0
+Religious Holidays,"Politics, Society and Global Studies",0,1,0.0
+Religious Holidays,Prerequisites and Course Sequences,0,1,0.0
+Religious Holidays,"Media, Arts and Literature",0,1,0.0
+Religious Holidays,Research and Interdisciplinary Study,0,1,0.0
+Religious Holidays,DKU Degrees and Transfer Credit,1,1,1.0
+Religious Holidays,STEM and Quantitative Courses,0,1,0.0
+Religious Holidays,"Academic Policies, Grades and Credits",0,1,0.0
+Requirements for All Majors,China and Asian Studies,1,17,0.058823529411764705
+Requirements for All Majors,"Politics, Society and Global Studies",2,17,0.11764705882352941
+Requirements for All Majors,Prerequisites and Course Sequences,1,17,0.058823529411764705
+Requirements for All Majors,"Media, Arts and Literature",1,17,0.058823529411764705
+Requirements for All Majors,Research and Interdisciplinary Study,4,17,0.23529411764705882
+Requirements for All Majors,DKU Degrees and Transfer Credit,0,17,0.0
+Requirements for All Majors,STEM and Quantitative Courses,3,17,0.17647058823529413
+Requirements for All Majors,"Academic Policies, Grades and Credits",5,17,0.29411764705882354
+Residence Life,China and Asian Studies,0,2,0.0
+Residence Life,"Politics, Society and Global Studies",0,2,0.0
+Residence Life,Prerequisites and Course Sequences,0,2,0.0
+Residence Life,"Media, Arts and Literature",0,2,0.0
+Residence Life,Research and Interdisciplinary Study,1,2,0.5
+Residence Life,DKU Degrees and Transfer Credit,1,2,0.5
+Residence Life,STEM and Quantitative Courses,0,2,0.0
+Residence Life,"Academic Policies, Grades and Credits",0,2,0.0
+Scholarships and Financial Aid,China and Asian Studies,0,4,0.0
+Scholarships and Financial Aid,"Politics, Society and Global Studies",0,4,0.0
+Scholarships and Financial Aid,Prerequisites and Course Sequences,0,4,0.0
+Scholarships and Financial Aid,"Media, Arts and Literature",0,4,0.0
+Scholarships and Financial Aid,Research and Interdisciplinary Study,0,4,0.0
+Scholarships and Financial Aid,DKU Degrees and Transfer Credit,3,4,0.75
+Scholarships and Financial Aid,STEM and Quantitative Courses,0,4,0.0
+Scholarships and Financial Aid,"Academic Policies, Grades and Credits",1,4,0.25
+Seven Principles of Duke Kunshan University Academic Advising,China and Asian Studies,0,7,0.0
+Seven Principles of Duke Kunshan University Academic Advising,"Politics, Society and Global Studies",0,7,0.0
+Seven Principles of Duke Kunshan University Academic Advising,Prerequisites and Course Sequences,0,7,0.0
+Seven Principles of Duke Kunshan University Academic Advising,"Media, Arts and Literature",0,7,0.0
+Seven Principles of Duke Kunshan University Academic Advising,Research and Interdisciplinary Study,7,7,1.0
+Seven Principles of Duke Kunshan University Academic Advising,DKU Degrees and Transfer Credit,0,7,0.0
+Seven Principles of Duke Kunshan University Academic Advising,STEM and Quantitative Courses,0,7,0.0
+Seven Principles of Duke Kunshan University Academic Advising,"Academic Policies, Grades and Credits",0,7,0.0
+Statement on Diversity and Inclusion,China and Asian Studies,0,1,0.0
+Statement on Diversity and Inclusion,"Politics, Society and Global Studies",0,1,0.0
+Statement on Diversity and Inclusion,Prerequisites and Course Sequences,0,1,0.0
+Statement on Diversity and Inclusion,"Media, Arts and Literature",0,1,0.0
+Statement on Diversity and Inclusion,Research and Interdisciplinary Study,0,1,0.0
+Statement on Diversity and Inclusion,DKU Degrees and Transfer Credit,1,1,1.0
+Statement on Diversity and Inclusion,STEM and Quantitative Courses,0,1,0.0
+Statement on Diversity and Inclusion,"Academic Policies, Grades and Credits",0,1,0.0
+Student Affairs,China and Asian Studies,0,2,0.0
+Student Affairs,"Politics, Society and Global Studies",0,2,0.0
+Student Affairs,Prerequisites and Course Sequences,0,2,0.0
+Student Affairs,"Media, Arts and Literature",0,2,0.0
+Student Affairs,Research and Interdisciplinary Study,2,2,1.0
+Student Affairs,DKU Degrees and Transfer Credit,0,2,0.0
+Student Affairs,STEM and Quantitative Courses,0,2,0.0
+Student Affairs,"Academic Policies, Grades and Credits",0,2,0.0
+Student Affairs Conceptual Framework,China and Asian Studies,0,7,0.0
+Student Affairs Conceptual Framework,"Politics, Society and Global Studies",5,7,0.7142857142857143
+Student Affairs Conceptual Framework,Prerequisites and Course Sequences,0,7,0.0
+Student Affairs Conceptual Framework,"Media, Arts and Literature",0,7,0.0
+Student Affairs Conceptual Framework,Research and Interdisciplinary Study,1,7,0.14285714285714285
+Student Affairs Conceptual Framework,DKU Degrees and Transfer Credit,1,7,0.14285714285714285
+Student Affairs Conceptual Framework,STEM and Quantitative Courses,0,7,0.0
+Student Affairs Conceptual Framework,"Academic Policies, Grades and Credits",0,7,0.0
+Student Clubs and Organizations,China and Asian Studies,0,1,0.0
+Student Clubs and Organizations,"Politics, Society and Global Studies",0,1,0.0
+Student Clubs and Organizations,Prerequisites and Course Sequences,0,1,0.0
+Student Clubs and Organizations,"Media, Arts and Literature",0,1,0.0
+Student Clubs and Organizations,Research and Interdisciplinary Study,0,1,0.0
+Student Clubs and Organizations,DKU Degrees and Transfer Credit,1,1,1.0
+Student Clubs and Organizations,STEM and Quantitative Courses,0,1,0.0
+Student Clubs and Organizations,"Academic Policies, Grades and Credits",0,1,0.0
+Student Conduct,China and Asian Studies,0,2,0.0
+Student Conduct,"Politics, Society and Global Studies",0,2,0.0
+Student Conduct,Prerequisites and Course Sequences,0,2,0.0
+Student Conduct,"Media, Arts and Literature",0,2,0.0
+Student Conduct,Research and Interdisciplinary Study,1,2,0.5
+Student Conduct,DKU Degrees and Transfer Credit,1,2,0.5
+Student Conduct,STEM and Quantitative Courses,0,2,0.0
+Student Conduct,"Academic Policies, Grades and Credits",0,2,0.0
+Student Research Opportunities,China and Asian Studies,0,2,0.0
+Student Research Opportunities,"Politics, Society and Global Studies",0,2,0.0
+Student Research Opportunities,Prerequisites and Course Sequences,0,2,0.0
+Student Research Opportunities,"Media, Arts and Literature",0,2,0.0
+Student Research Opportunities,Research and Interdisciplinary Study,0,2,0.0
+Student Research Opportunities,DKU Degrees and Transfer Credit,2,2,1.0
+Student Research Opportunities,STEM and Quantitative Courses,0,2,0.0
+Student Research Opportunities,"Academic Policies, Grades and Credits",0,2,0.0
+Submission of Term Paper,China and Asian Studies,0,1,0.0
+Submission of Term Paper,"Politics, Society and Global Studies",0,1,0.0
+Submission of Term Paper,Prerequisites and Course Sequences,0,1,0.0
+Submission of Term Paper,"Media, Arts and Literature",0,1,0.0
+Submission of Term Paper,Research and Interdisciplinary Study,0,1,0.0
+Submission of Term Paper,DKU Degrees and Transfer Credit,0,1,0.0
+Submission of Term Paper,STEM and Quantitative Courses,0,1,0.0
+Submission of Term Paper,"Academic Policies, Grades and Credits",1,1,1.0
+The Provision of Academic Information to Parents and Guardians,China and Asian Studies,0,1,0.0
+The Provision of Academic Information to Parents and Guardians,"Politics, Society and Global Studies",0,1,0.0
+The Provision of Academic Information to Parents and Guardians,Prerequisites and Course Sequences,0,1,0.0
+The Provision of Academic Information to Parents and Guardians,"Media, Arts and Literature",0,1,0.0
+The Provision of Academic Information to Parents and Guardians,Research and Interdisciplinary Study,0,1,0.0
+The Provision of Academic Information to Parents and Guardians,DKU Degrees and Transfer Credit,0,1,0.0
+The Provision of Academic Information to Parents and Guardians,STEM and Quantitative Courses,0,1,0.0
+The Provision of Academic Information to Parents and Guardians,"Academic Policies, Grades and Credits",1,1,1.0
+Time Limit for Completing Undergraduate Degree,China and Asian Studies,0,1,0.0
+Time Limit for Completing Undergraduate Degree,"Politics, Society and Global Studies",0,1,0.0
+Time Limit for Completing Undergraduate Degree,Prerequisites and Course Sequences,0,1,0.0
+Time Limit for Completing Undergraduate Degree,"Media, Arts and Literature",0,1,0.0
+Time Limit for Completing Undergraduate Degree,Research and Interdisciplinary Study,0,1,0.0
+Time Limit for Completing Undergraduate Degree,DKU Degrees and Transfer Credit,1,1,1.0
+Time Limit for Completing Undergraduate Degree,STEM and Quantitative Courses,0,1,0.0
+Time Limit for Completing Undergraduate Degree,"Academic Policies, Grades and Credits",0,1,0.0
+Transfer of Work Taken Elsewhere,China and Asian Studies,0,9,0.0
+Transfer of Work Taken Elsewhere,"Politics, Society and Global Studies",0,9,0.0
+Transfer of Work Taken Elsewhere,Prerequisites and Course Sequences,0,9,0.0
+Transfer of Work Taken Elsewhere,"Media, Arts and Literature",0,9,0.0
+Transfer of Work Taken Elsewhere,Research and Interdisciplinary Study,0,9,0.0
+Transfer of Work Taken Elsewhere,DKU Degrees and Transfer Credit,9,9,1.0
+Transfer of Work Taken Elsewhere,STEM and Quantitative Courses,0,9,0.0
+Transfer of Work Taken Elsewhere,"Academic Policies, Grades and Credits",0,9,0.0
+Tuition and Fees,China and Asian Studies,0,2,0.0
+Tuition and Fees,"Politics, Society and Global Studies",0,2,0.0
+Tuition and Fees,Prerequisites and Course Sequences,0,2,0.0
+Tuition and Fees,"Media, Arts and Literature",0,2,0.0
+Tuition and Fees,Research and Interdisciplinary Study,0,2,0.0
+Tuition and Fees,DKU Degrees and Transfer Credit,1,2,0.5
+Tuition and Fees,STEM and Quantitative Courses,0,2,0.0
+Tuition and Fees,"Academic Policies, Grades and Credits",1,2,0.5
+Two-Credit Writing Courses,China and Asian Studies,0,1,0.0
+Two-Credit Writing Courses,"Politics, Society and Global Studies",0,1,0.0
+Two-Credit Writing Courses,Prerequisites and Course Sequences,0,1,0.0
+Two-Credit Writing Courses,"Media, Arts and Literature",0,1,0.0
+Two-Credit Writing Courses,Research and Interdisciplinary Study,0,1,0.0
+Two-Credit Writing Courses,DKU Degrees and Transfer Credit,0,1,0.0
+Two-Credit Writing Courses,STEM and Quantitative Courses,0,1,0.0
+Two-Credit Writing Courses,"Academic Policies, Grades and Credits",1,1,1.0
+Undergraduate Course Load,China and Asian Studies,0,27,0.0
+Undergraduate Course Load,"Politics, Society and Global Studies",0,27,0.0
+Undergraduate Course Load,Prerequisites and Course Sequences,0,27,0.0
+Undergraduate Course Load,"Media, Arts and Literature",0,27,0.0
+Undergraduate Course Load,Research and Interdisciplinary Study,0,27,0.0
+Undergraduate Course Load,DKU Degrees and Transfer Credit,2,27,0.07407407407407407
+Undergraduate Course Load,STEM and Quantitative Courses,0,27,0.0
+Undergraduate Course Load,"Academic Policies, Grades and Credits",25,27,0.9259259259259259
+Who We Are,China and Asian Studies,0,5,0.0
+Who We Are,"Politics, Society and Global Studies",0,5,0.0
+Who We Are,Prerequisites and Course Sequences,0,5,0.0
+Who We Are,"Media, Arts and Literature",0,5,0.0
+Who We Are,Research and Interdisciplinary Study,0,5,0.0
+Who We Are,DKU Degrees and Transfer Credit,5,5,1.0
+Who We Are,STEM and Quantitative Courses,0,5,0.0
+Who We Are,"Academic Policies, Grades and Credits",0,5,0.0
