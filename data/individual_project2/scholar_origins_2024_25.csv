@@ -1,0 +1,221 @@
+country,country_code,region,year,count,count_status,overall_rank,latitude,longitude
+Cameroon,CMR,Africa,2024/25,123,positive,70,6,12
+Central African Republic,CAF,Africa,2024/25,0,zero,,7,21
+Chad,TCD,Africa,2024/25,3,positive,171,15,19
+"Congo, Republic of the (Brazzaville)",COG,Africa,2024/25,4,positive,162,-1,15
+"Congo, Dem. Rep. of the (Kinshasa)",COD,Africa,2024/25,21,positive,124,0,25
+Equatorial Guinea,GNQ,Africa,2024/25,1,positive,189,2,10
+Gabon,GAB,Africa,2024/25,2,positive,178,-1,11.75
+São Tomé and Príncipe,STP,Africa,2024/25,2,positive,179,1,7
+Burundi,BDI,Africa,2024/25,4,positive,163,-3.5,30
+Djibouti,DJI,Africa,2024/25,3,positive,172,11.5,43
+Eritrea,ERI,Africa,2024/25,2,positive,180,15,39
+Ethiopia,ETH,Africa,2024/25,293,positive,51,8,38
+Kenya,KEN,Africa,2024/25,303,positive,50,1,38
+Rwanda,RWA,Africa,2024/25,66,positive,89,-2,30
+Seychelles,SYC,Africa,2024/25,1,positive,190,-4.58333333,55.66666666
+Somalia,SOM,Africa,2024/25,4,positive,164,10,49
+South Sudan,SSD,Africa,2024/25,8,positive,151,7,30
+Sudan,SDN,Africa,2024/25,73,positive,85,15,30
+Tanzania,TZA,Africa,2024/25,88,positive,80,-6,35
+Uganda,UGA,Africa,2024/25,152,positive,66,1,32
+Angola,AGO,Africa,2024/25,9,positive,148,-12.5,18.5
+Botswana,BWA,Africa,2024/25,18,positive,133,-22,24
+Comoros,COM,Africa,2024/25,6,positive,159,-12.16666666,44.25
+Eswatini,SWZ,Africa,2024/25,19,positive,129,-26.5,31.5
+Lesotho,LSO,Africa,2024/25,6,positive,160,-29.5,28.5
+Madagascar,MDG,Africa,2024/25,21,positive,125,-20,47
+Malawi,MWI,Africa,2024/25,42,positive,107,-13.5,34
+Mauritius,MUS,Africa,2024/25,29,positive,116,-20.28333333,57.55
+Mozambique,MOZ,Africa,2024/25,17,positive,134,-18.25,35
+Namibia,NAM,Africa,2024/25,19,positive,130,-22,17
+Reunion,REU,Africa,2024/25,0,zero,,-21.15,55.5
+South Africa,ZAF,Africa,2024/25,265,positive,55,-29,24
+Zambia,ZMB,Africa,2024/25,58,positive,96,-15,30
+Zimbabwe,ZWE,Africa,2024/25,154,positive,65,-20,30
+Benin,BEN,Africa,2024/25,33,positive,112,9.5,2.25
+Burkina Faso,BFA,Africa,2024/25,33,positive,113,13,-2
+Cabo Verde,CPV,Africa,2024/25,1,positive,191,16,-24
+Côte d’Ivoire,CIV,Africa,2024/25,21,positive,126,8,-5
+"Gambia, The",GMB,Africa,2024/25,11,positive,143,13.46666666,-16.56666666
+Ghana,GHA,Africa,2024/25,490,positive,34,8,-2
+Guinea,GIN,Africa,2024/25,7,positive,155,11,-10
+Guinea-Bissau,GNB,Africa,2024/25,4,positive,165,12,-15
+Liberia,LBR,Africa,2024/25,14,positive,138,6.5,-9.5
+Mali,MLI,Africa,2024/25,24,positive,120,17,-4
+Mauritania,MRT,Africa,2024/25,6,positive,161,20,-12
+Niger,NER,Africa,2024/25,9,positive,149,16,8
+Nigeria,NGA,Africa,2024/25,959,positive,20,10,8
+Saint Helena,SHN,Africa,2024/25,0,zero,,-15.95,-5.72
+Senegal,SEN,Africa,2024/25,58,positive,97,14,-14
+Sierra Leone,SLE,Africa,2024/25,12,positive,141,8.5,-11.5
+Togo,TGO,Africa,2024/25,10,positive,145,8,1.16666666
+China,CHN,Asia,2024/25,25983,positive,1,35,105
+Hong Kong,HKG,Asia,2024/25,320,positive,47,22.267,114.188
+Japan,JPN,Asia,2024/25,2978,positive,8,36,138
+Macau,MAC,Asia,2024/25,11,positive,144,22.16666666,113.55
+Mongolia,MNG,Asia,2024/25,64,positive,91,46,105
+North Korea,PRK,Asia,2024/25,2,positive,181,40,127
+South Korea,KOR,Asia,2024/25,7862,positive,3,37,127.5
+Taiwan,TWN,Asia,2024/25,1670,positive,16,23.5,121
+Afghanistan,AFG,Asia,2024/25,94,positive,78,33,65
+Bangladesh,BGD,Asia,2024/25,790,positive,22,24,90
+Bhutan,BTN,Asia,2024/25,4,positive,166,27.5,90.5
+India,IND,Asia,2024/25,19156,positive,2,20,77
+Kazakhstan,KAZ,Asia,2024/25,428,positive,35,48,68
+Kyrgyzstan,KGZ,Asia,2024/25,22,positive,123,41,75
+Maldives,MDV,Asia,2024/25,2,positive,182,3.25,73
+Nepal,NPL,Asia,2024/25,716,positive,25,28,84
+Pakistan,PAK,Asia,2024/25,1682,positive,15,30,70
+Sri Lanka,LKA,Asia,2024/25,358,positive,43,7,81
+Tajikistan,TJK,Asia,2024/25,15,positive,135,39,71
+Turkmenistan,TKM,Asia,2024/25,8,positive,152,40,60
+Uzbekistan,UZB,Asia,2024/25,61,positive,92,41,64
+Brunei,BRN,Asia,2024/25,1,positive,192,4.5,114.66666666
+Burma,MMR,Asia,2024/25,54,positive,99,22,98
+Cambodia,KHM,Asia,2024/25,21,positive,127,13,105
+Indonesia,IDN,Asia,2024/25,287,positive,53,-5,120
+Laos,LAO,Asia,2024/25,3,positive,173,18,105
+Malaysia,MYS,Asia,2024/25,289,positive,52,2.5,112.5
+Philippines,PHL,Asia,2024/25,306,positive,49,13,122
+Singapore,SGP,Asia,2024/25,315,positive,48,1.36666666,103.8
+Thailand,THA,Asia,2024/25,552,positive,32,15,100
+Timor-Leste,TLS,Asia,2024/25,2,positive,183,-8.83333333,125.91666666
+Vietnam,VNM,Asia,2024/25,550,positive,33,16.16666666,107.83333333
+Albania,ALB,Europe,2024/25,43,positive,105,41,20
+Andorra,AND,Europe,2024/25,4,positive,167,42.5,1.5
+Armenia,ARM,Europe,2024/25,61,positive,93,40,45
+Austria,AUT,Europe,2024/25,375,positive,41,47.33333333,13.33333333
+Azerbaijan,AZE,Europe,2024/25,47,positive,102,40.5,47.5
+Belarus,BLR,Europe,2024/25,57,positive,98,53,28
+Belgium,BEL,Europe,2024/25,412,positive,37,50.83333333,4
+Bosnia and Herzegovina,BIH,Europe,2024/25,25,positive,117,44,18
+Bulgaria,BGR,Europe,2024/25,89,positive,79,43,25
+Croatia,HRV,Europe,2024/25,106,positive,73,45.16666666,15.5
+Cyprus,CYP,Europe,2024/25,69,positive,87,35,33
+Czech Republic,CZE,Europe,2024/25,192,positive,60,49.75,15.5
+Denmark,DNK,Europe,2024/25,259,positive,56,56,10
+Estonia,EST,Europe,2024/25,46,positive,103,59,26
+Finland,FIN,Europe,2024/25,196,positive,59,64,26
+France,FRA,Europe,2024/25,2879,positive,9,46,2
+Georgia,GEO,Europe,2024/25,72,positive,86,42,43.5
+Germany,DEU,Europe,2024/25,3637,positive,6,51,9
+Gibraltar,GIB,Europe,2024/25,0,zero,,36.13333333,-5.35
+Greece,GRC,Europe,2024/25,752,positive,23,39,22
+Holy See,VAT,Europe,2024/25,0,zero,,41.9,12.45
+Hungary,HUN,Europe,2024/25,226,positive,57,47,20
+Iceland,ISL,Europe,2024/25,31,positive,114,65,-18
+Ireland,IRL,Europe,2024/25,357,positive,44,53,-8
+Italy,ITA,Europe,2024/25,3525,positive,7,42.83333333,12.83333333
+Kosovo,UNK,Europe,2024/25,15,positive,136,42.666667,21.166667
+Latvia,LVA,Europe,2024/25,25,positive,118,57,25
+Liechtenstein,LIE,Europe,2024/25,3,positive,174,47.26666666,9.53333333
+Lithuania,LTU,Europe,2024/25,53,positive,100,56,24
+Luxembourg,LUX,Europe,2024/25,31,positive,115,49.75,6.16666666
+Malta,MLT,Europe,2024/25,9,positive,150,35.83333333,14.58333333
+Moldova,MDA,Europe,2024/25,7,positive,156,47,29
+Monaco,MCO,Europe,2024/25,1,positive,193,43.73333333,7.4
+Montenegro,MNE,Europe,2024/25,15,positive,137,42.5,19.3
+Netherlands,NLD,Europe,2024/25,677,positive,27,52.5,5.75
+North Macedonia,MKD,Europe,2024/25,14,positive,139,41.83333333,22
+Norway,NOR,Europe,2024/25,351,positive,45,62,10
+Poland,POL,Europe,2024/25,594,positive,29,52,20
+Portugal,PRT,Europe,2024/25,377,positive,40,39.5,-8
+Romania,ROU,Europe,2024/25,147,positive,67,46,25
+Russia,RUS,Europe,2024/25,714,positive,26,60,100
+San Marino,SMR,Europe,2024/25,0,zero,,43.76666666,12.41666666
+Serbia,SRB,Europe,2024/25,131,positive,69,44,21
+Slovakia,SVK,Europe,2024/25,104,positive,74,48.66666666,19.5
+Slovenia,SVN,Europe,2024/25,65,positive,90,46.11666666,14.81666666
+Spain,ESP,Europe,2024/25,2274,positive,11,40,-4
+Sweden,SWE,Europe,2024/25,344,positive,46,62,15
+Switzerland,CHE,Europe,2024/25,578,positive,30,47,8
+Turkey/Türkiye,TUR,Europe,2024/25,2104,positive,12,39,35
+Ukraine,UKR,Europe,2024/25,381,positive,39,49,32
+United Kingdom,GBR,Europe,2024/25,2320,positive,10,54,-2
+Anguilla,AIA,Americas,2024/25,0,zero,,18.25,-63.16666666
+Antigua and Barbuda,ATG,Americas,2024/25,4,positive,168,17.05,-61.8
+Aruba,ABW,Americas,2024/25,7,positive,157,12.5,-69.96666666
+Bahamas,BHS,Americas,2024/25,85,positive,81,24.25,-76
+Barbados,BRB,Americas,2024/25,19,positive,131,13.16666666,-59.53333333
+Bermuda,BMU,Americas,2024/25,1,positive,194,32.33333333,-64.75
+British Virgin Islands,VGB,Americas,2024/25,2,positive,184,18.431383,-64.62305
+Cayman Islands,CYM,Americas,2024/25,0,zero,,19.5,-80.5
+Cuba,CUB,Americas,2024/25,35,positive,110,21.5,-80
+Curacao,CUW,Americas,2024/25,0,zero,,12.116667,-68.933333
+Dominica,DMA,Americas,2024/25,12,positive,142,15.41666666,-61.33333333
+Dominican Republic,DOM,Americas,2024/25,83,positive,82,19,-70.66666666
+Grenada,GRD,Americas,2024/25,10,positive,146,12.11666666,-61.66666666
+Guadeloupe,GLP,Americas,2024/25,0,zero,,16.25,-61.583333
+Haiti,HTI,Americas,2024/25,42,positive,108,19,-72.41666666
+Jamaica,JAM,Americas,2024/25,101,positive,75,18.25,-77.5
+Martinique,MTQ,Americas,2024/25,0,zero,,14.666667,-61
+Montserrat,MSR,Americas,2024/25,0,zero,,16.75,-62.2
+Saint Kitts and Nevis,KNA,Americas,2024/25,8,positive,153,17.33333333,-62.75
+Saint Lucia,LCA,Americas,2024/25,14,positive,140,13.88333333,-60.96666666
+Saint Vincent and the Grenadines,VCT,Americas,2024/25,2,positive,185,13.25,-61.2
+Sint Maarten,SXM,Americas,2024/25,0,zero,,18.033333,-63.05
+Trinidad and Tobago,TTO,Americas,2024/25,79,positive,83,11,-61
+Turks and Caicos,TCA,Americas,2024/25,1,positive,195,21.75,-71.58333333
+Belize,BLZ,Americas,2024/25,21,positive,128,17.25,-88.75
+Costa Rica,CRI,Americas,2024/25,157,positive,63,10,-84
+El Salvador,SLV,Americas,2024/25,67,positive,88,13.83333333,-88.91666666
+Guatemala,GTM,Americas,2024/25,112,positive,72,15.5,-90.25
+Honduras,HND,Americas,2024/25,157,positive,64,15,-86.5
+Mexico,MEX,Americas,2024/25,1994,positive,14,23,-102
+Nicaragua,NIC,Americas,2024/25,46,positive,104,13,-85
+Panama,PAN,Americas,2024/25,34,positive,111,9,-80
+Argentina,ARG,Americas,2024/25,735,positive,24,-34,-64
+Bolivia,BOL,Americas,2024/25,60,positive,95,-17,-65
+Brazil,BRA,Americas,2024/25,4789,positive,4,-10,-55
+Chile,CHL,Americas,2024/25,610,positive,28,-30,-71
+Colombia,COL,Americas,2024/25,1564,positive,17,4,-72
+Ecuador,ECU,Americas,2024/25,287,positive,54,-2,-77.5
+Falkland Islands/Islas Malvinas,FLK,Americas,2024/25,0,zero,,-51.75,-59
+French Guiana,GUF,Americas,2024/25,0,zero,,4,-53
+Guyana,GUY,Americas,2024/25,8,positive,154,5,-59
+Paraguay,PRY,Americas,2024/25,23,positive,121,-23,-58
+Peru,PER,Americas,2024/25,417,positive,36,-10,-76
+Suriname,SUR,Americas,2024/25,3,positive,175,4,-56
+Uruguay,URY,Americas,2024/25,101,positive,76,-33,-56
+Venezuela,VEN,Americas,2024/25,177,positive,62,8,-66
+Bahrain,BHR,Asia,2024/25,25,positive,119,26,50.55
+Iran,IRN,Asia,2024/25,2084,positive,13,32,53
+Iraq,IRQ,Asia,2024/25,119,positive,71,33,44
+Israel,ISR,Asia,2024/25,1161,positive,18,31.47,35.13
+Jordan,JOR,Asia,2024/25,359,positive,42,31,36
+Kuwait,KWT,Asia,2024/25,43,positive,106,29.5,45.75
+Lebanon,LBN,Asia,2024/25,563,positive,31,33.83333333,35.83333333
+Oman,OMN,Asia,2024/25,19,positive,132,21,57
+Palestinian Territories,PSE,Asia,2024/25,61,positive,94,31.9,35.2
+Qatar,QAT,Asia,2024/25,10,positive,147,25.5,51.25
+Saudi Arabia,SAU,Asia,2024/25,408,positive,38,25,45
+Syria,SYR,Asia,2024/25,134,positive,68,35,38
+United Arab Emirates,ARE,Asia,2024/25,52,positive,101,24,54
+Yemen,YEM,Asia,2024/25,23,positive,122,15,48
+Algeria,DZA,Africa,2024/25,79,positive,84,28,3
+Egypt,EGY,Africa,2024/25,986,positive,19,27,30
+Libya,LBY,Africa,2024/25,41,positive,109,25,17
+Morocco,MAR,Africa,2024/25,187,positive,61,32,-5
+Tunisia,TUN,Africa,2024/25,97,positive,77,34,9
+Canada,CAN,Americas,2024/25,4213,positive,5,60,-95
+Australia,AUS,Oceania,2024/25,874,positive,21,-27,133
+Cook Islands,COK,Oceania,2024/25,0,zero,,-21.23333333,-159.76666666
+Fiji,FJI,Oceania,2024/25,7,positive,158,-18,175
+French Polynesia,PYF,Oceania,2024/25,0,zero,,-15,-140
+Kiribati,KIR,Oceania,2024/25,4,positive,169,1.41666666,173
+"Marshall Islands, Republic of the",MHL,Oceania,2024/25,0,zero,,9,168
+"Micronesia, Federated States of",FSM,Oceania,2024/25,4,positive,170,6.91666666,158.25
+Nauru,NRU,Oceania,2024/25,0,zero,,-0.53333333,166.91666666
+New Caledonia,NCL,Oceania,2024/25,0,zero,,-21.5,165.5
+New Zealand,NZL,Oceania,2024/25,197,positive,58,-41,174
+Niue,NIU,Oceania,2024/25,0,zero,,-19.03333333,-169.86666666
+Norfolk Island,NFK,Oceania,2024/25,0,zero,,-29.03333333,167.95
+Palau,PLW,Oceania,2024/25,2,positive,186,7.5,134.5
+Papua New Guinea,PNG,Oceania,2024/25,3,positive,176,-6,147
+Samoa,WSM,Oceania,2024/25,0,zero,,-13.58333333,-172.33333333
+Solomon Islands,SLB,Oceania,2024/25,2,positive,187,-8,159
+Tonga,TON,Oceania,2024/25,2,positive,188,-20,-175
+Tuvalu,TUV,Oceania,2024/25,0,zero,,-8,178
+Vanuatu,VUT,Oceania,2024/25,0,zero,,-16,167
+Wallis and Futuna,WLF,Oceania,2024/25,3,positive,177,-13.3,-176.2

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Critique and Redesign | STATS 401</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="project-body">
+    <header class="project-header">
+        <a href="../index.html" class="back-link" aria-label="Back to course home">←</a>
+        <div>
+            <h1>Visualization Critique and Redesign</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="visualization" class="project-section">
+            <h2>Visualization</h2>
+            <article class="original-panel">
+                <div class="original-copy">
+                    <p class="project-kicker">Original visualization · 2024 data</p>
+                    <h3>How Much People Make Annually, by Occupation</h3>
+                    <p class="source-line">
+                        FlowingData / Nathan Yau ·
+                        <a href="https://flowingdata.com/2025/09/09/salary-and-occupation-2024/" target="_blank" rel="noopener">
+                            View the original article
+                        </a>
+                    </p>
+
+                    <p>
+                        The original presents U.S. occupations in one beeswarm. Each circle represents an occupation:
+                        vertical position encodes median annual salary, circle area encodes employment, and color identifies
+                        one of the major occupational categories. Search and hover support occupation-level inspection.
+                    </p>
+                    <h3>Analysis of the Original Visualization</h3>
+
+                    <p>
+                        <strong>Intended message: </strong>
+                        The visualization shows how median annual salaries vary across U.S. occupations while also communicating
+                        employment size and occupational category. It helps viewers notice the overall salary distribution,
+                        concentrations of occupations in lower and middle salary ranges, and a smaller number of high-paying outliers.
+                    </p>
+
+                    <p>
+                        <strong>Audience: </strong>
+                        The intended audience is a general public audience interested in employment and wages, including students,
+                        job seekers, workers, and readers comparing occupations or career paths.
+                    </p>
+
+                    <p>
+                        <strong>Tasks: </strong>
+                        Viewers should be able to compare median salaries, identify high- and low-paying occupations, locate salary
+                        outliers, estimate which occupations employ more workers, distinguish occupational categories, and search
+                        for a specific occupation.
+                    </p>
+
+                    <h2>Critique the Visualization</h2>
+                    <h3>A. Strengths</h3>
+
+                    <p>
+                        <strong>1. Salary uses an effective quantitative channel: </strong>
+                        Vertical position represents median annual salary on a common scale, so viewers can quickly identify high- and low-paying occupations.
+
+                    </p>
+
+                    <p>
+                        <strong>2. Multiple variables are shown in one view: </strong>
+                        Each bubble represents an occupation, bubble size shows employment, and color shows occupational category. Hover and search also help users inspect specific occupations.
+                    </p>
+
+                    <h3>B. Weaknesses and Opportunities for Improvement</h3>
+
+                    <p>
+                        <strong>1. Occupational groups are difficult to understand: </strong>
+                        The beeswarm spreads circles horizontally mainly to avoid overlap rather than to encode another meaningful
+                        variable. Occupations from the same major group are mixed throughout the chart and can only be identified by color. 
+                        With many colors and hundreds of bubbles, it is difficult to see the overall salary pattern of one group or compare one group with another. 
+                        Grouping occupations spatially by major occupational category would make these patterns much easier to see.
+                    </p>
+
+                    <p>
+                        <strong>2. Category identification depends too heavily on color.</strong>
+                        The original uses about 22 colors to distinguish occupational groups. 
+                        Remembering that many color mappings is difficult, and similar hues are hard to trace through one mixed cloud. 
+                        This weakens group comparison and also creates an accessibility issue because color carries essential meaning. 
+                        The redesign gives each group a labeled x-axis region and uses a calmer color treatment, so position and text—not color alone—identify categories.
+                    </p>
+
+                    <p>
+                        <strong>3. Dense areas are difficult to read: </strong>
+                        Hundreds of occupations cluster in the lower and middle salary ranges, making individual circles and
+                        category-level patterns difficult to separate. This makes it harder to compare groups or inspect occupations
+                        in dense regions. Giving each occupational group its own horizontal region and using collision-aware beeswarm
+                        placement can reduce overlap while preserving salary position.
+                    </p>
+
+                    <p>
+                        <strong>4. Bubble area supports only approximate employment comparison.</strong>
+                        Circle area is less precise than position or length for quantitative comparison, so exact differences in
+                        employment are difficult to judge visually. Keeping area as a secondary magnitude encoding is reasonable,
+                        but a size legend and exact values in the tooltip make the encoding easier to interpret.
+                    </p>
+                </div>
+
+                <figure class="original-figure">
+                    <img src="original-visualization.png"
+                        alt="FlowingData chart showing occupations as differently colored bubbles positioned by median annual salary and sized by employment">
+                    <figcaption>
+                        Figure 1. The original FlowingData visualization, based on 2024 BLS OEWS data.
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article id="redesign" class="redesign-panel">
+                <form class="occupation-search" id="occupation-search" role="search">
+                    <label for="occupation-query">Find an occupation</label>
+                    <div class="search-row">
+                        <input id="occupation-query" name="occupation" type="search" list="occupation-list" placeholder="Search..." autocomplete="off">
+                        <datalist id="occupation-list"></datalist>
+                        <button type="submit">Find</button>
+                        <button type="button" id="clear-search" class="secondary-button">Clear</button>
+                    </div>
+                </form>
+                <div></div>
+                <div class="redesign-heading">
+                    <div>
+                        <h3>Annual salary across U.S. occupations, 2025</h3>
+                    </div>
+                </div>
+
+                <div class="chart-guides">
+                    <div class="chart-key" aria-label="Chart key">
+                        <div><span class="key-dot"></span>Detailed occupation</div>
+                        <div><span class="key-diamond"></span>Group median (median of occupation medians)</div>
+                        <div><span class="key-dot key-dot-accent"></span>Selected occupation</div>
+                        <div><span class="key-line"></span>National median</div>
+                    </div>
+                    <div id="size-legend" class="size-legend" aria-label="Employment bubble size legend"></div>
+                </div>
+                <div class="chart-wide-breakout">
+                    <div id="occupation-chart" class="occupation-chart" aria-label="Unified grouped beeswarm of annual median salaries for 825 detailed occupations in 22 major groups">
+                        <p class="chart-loading">Loading occupation data…</p>
+                    </div>
+                </div>
+                <p class="chart-note"><strong>How to read:</strong> height encodes median salary through $220,000. Higher-paying occupations occupy the small non-quantitative region above the $220k line; hover for their exact salaries. Diamonds show the median of detailed-occupation medians in each group, not an employment-weighted worker median.</p>
+                <p class="data-source">Source: <a href="https://www.bls.gov/oes/tables.htm" target="_blank" rel="noopener">U.S. Bureau of Labor Statistics, Occupational Employment and Wage Statistics, May 2025</a>. Salary values are BLS annual wage estimates. <span id="occupation-count">825</span> detailed occupations shown.</p>
+            </article>
+        </section>
+
+        <article id="report" class="project-section project-report">
+            <h2>Redesign Report</h2>
+
+            <section>
+                <h3>Redesign Rationale</h3>
+                <p>The first major decision was one coordinated categorical beeswarm. A band scale assigns each BLS major group a horizontal region, turning previously arbitrary x-position into meaningful organization. Occupations stay close to their group center, while small within-band offsets resolve collisions. Group labels and subtle background bands make categories readable without enclosing them in separate cards.</p>
+                <p>Second, the y-axis focuses on salaries from $20,000 to $220,000, where most occupations are concentrated. This gives substantially more visual space to common salary differences and clustering. Higher-paying occupations remain visible in a small region above the axis, but their vertical position there is intentionally non-quantitative; viewers hover for exact values. This trade-off prioritizes resolution in the much denser salary range without deleting high-paying occupations or suggesting a distorted numerical scale.</p>
+                <p>Third, the redesign adds dark diamonds showing the median of detailed-occupation medians within each group. This unweighted occupation-level summary makes category comparison easier without implying a worker-level median. Calm blue circles reduce color noise, while a square-root radius scale keeps employment encoded through area. Enlarging those circles makes employment differences easier to perceive. Larger labels, subtle horizontal gridlines, and the removal of vertical rules further reduce clutter. Search highlights a named occupation; hovering a bubble or group label emphasizes its category and fades unrelated marks. Tooltips expose occupation, full group, employment, and exact percentile salaries.</p>
+            </section>
+
+            <section>
+                <h3>Original vs. Redesign</h3>
+                <p>The redesign makes group membership, within-group distributions, and category medians easier to compare in one scan. Above $220,000, vertical position no longer supports precise quantitative comparison, so users must hover for exact values; this is intentional because the redesign prioritizes the range containing most occupations. Dense groups still rely on interaction for individual lookup, and circle area supports less precise employment comparison than aligned length. The redesign uses May 2025 rather than 2024 data, so numerical differences may reflect the update; the fairest comparison is organization and readability.</p>
+            </section>
+
+            <figure class="redesign-capture">
+                <img src="redesigned-visualization.png" alt="Static overview of the redesigned unified categorical occupation salary beeswarm" loading="lazy">
+                <figcaption>Figure 2. Static capture of the redesign. The interactive version above supports search, hover, and keyboard focus.</figcaption>
+            </figure>
+
+            <section id="references" class="references">
+                <h3>References</h3>
+                <ol>
+                    <li>Yau, N. (2025). <a href="https://flowingdata.com/2025/09/09/salary-and-occupation-2024/" target="_blank" rel="noopener">“How Much People Make Annually, by Occupation.”</a> FlowingData.</li>
+                    <li>U.S. Bureau of Labor Statistics. <a href="https://www.bls.gov/oes/tables.htm" target="_blank" rel="noopener">Occupational Employment and Wage Statistics, May 2025 National estimates.</a></li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <div id="occupation-tooltip" class="tooltip project-tooltip" role="tooltip" aria-hidden="true"></div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="project.js"></script>
+</body>
+</html>

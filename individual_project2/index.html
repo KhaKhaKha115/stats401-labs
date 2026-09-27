@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: Visualization Critique and Redesign | STATS 401</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="project-body project2-body">
+    <header class="project-header">
+        <a href="../index.html" class="back-link" aria-label="Back to course home">←</a>
+        <div>
+            <p class="project-eyebrow">Project 2</p>
+            <h1>Visualization Critique and Redesign</h1>
+            <p class="project-deck">International origins, made visible as movement and measurable as rank.</p>
+        </div>
+    </header>
+
+    <nav class="project-nav" aria-label="Page sections">
+        <a href="#original">Original</a>
+        <a href="#redesign">Redesign</a>
+        <a href="#report">Critique &amp; report</a>
+        <a href="#references">References</a>
+    </nav>
+
+    <main>
+        <section id="visualization" class="project-section">
+            <h2>Visualization</h2>
+
+            <article id="original" class="original-panel">
+                <div class="original-copy">
+                    <p class="project-kicker">Original visualization · student data · 2022</p>
+                    <h3>International Students by Place of Origin (2022)</h3>
+                    <p class="source-line">Visual Capitalist / Ehsan Soltani · <a href="https://www.visualcapitalist.com/cp/international-students-in-the-u-s-come-from/" target="_blank" rel="noopener">View the original article</a></p>
+                    <p>The original uses a world choropleth to show the number of international students enrolled in the United States by place of origin. Four binned blue shades encode magnitude, while selected countries receive labels and the ten largest receive rank markers.</p>
+                    <p class="population-note"><strong>Important distinction:</strong> the available redesign file is not this student dataset. It reports international <em>scholars</em> on nonimmigrant visas who undertake temporary academic activities and are not enrolled as students.</p>
+                </div>
+                <figure class="original-figure">
+                    <img src="original-vis.png" alt="World choropleth titled International Students by Place of Origin (2022), with darker blue countries indicating more students in the United States and selected countries labeled">
+                    <figcaption>Figure 1. The 2022 student visualization selected for critique. Source: Visual Capitalist; primary data: IIE Open Doors.</figcaption>
+                </figure>
+            </article>
+
+            <article id="redesign" class="redesign-panel">
+                <div class="redesign-heading">
+                    <div>
+                        <p class="project-kicker">Redesign · scholar data · 2024/25</p>
+                        <h3>International Scholars Coming to the United States</h3>
+                        <p>Curved lines connect each positive-value country of origin to the United States. Thicker, darker-blue lines represent more scholars; the overall largest origin country is highlighted in red.</p>
+                    </div>
+                    <div class="project2-stats" aria-label="Key data values">
+                        <div class="reference-stat">
+                            <span>All scholars</span>
+                            <strong>116,540</strong>
+                        </div>
+                        <div class="reference-stat is-maximum">
+                            <span>Largest origin</span>
+                            <strong>China · 25,983</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flow-controls" aria-label="Visualization filters">
+                    <fieldset>
+                        <legend>Region</legend>
+                        <div class="control-group" id="region-controls">
+                            <button type="button" data-region="All" class="active" aria-pressed="true">All</button>
+                            <button type="button" data-region="Asia" aria-pressed="false">Asia</button>
+                            <button type="button" data-region="Europe" aria-pressed="false">Europe</button>
+                            <button type="button" data-region="Africa" aria-pressed="false">Africa</button>
+                            <button type="button" data-region="Americas" aria-pressed="false">Americas</button>
+                            <button type="button" data-region="Oceania" aria-pressed="false">Oceania</button>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Show</legend>
+                        <div class="control-group" id="top-controls">
+                            <button type="button" data-top="10" aria-pressed="false">Top 10</button>
+                            <button type="button" data-top="20" class="active" aria-pressed="true">Top 20</button>
+                            <button type="button" data-top="All" aria-pressed="false">All</button>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="flow-key" aria-label="Flow width legend">
+                    <span class="flow-key-label">Fewer scholars</span>
+                    <span class="width-key" aria-hidden="true"><i></i><i></i><i></i></span>
+                    <span class="flow-key-label">More scholars</span>
+                    <span class="maximum-key"><span aria-hidden="true"></span>Overall #1 origin</span>
+                    <span class="scale-note">Square-root width scale</span>
+                </div>
+                <p id="flow-status" class="flow-status" aria-live="polite">Loading scholar origin data…</p>
+
+                <div class="flow-layout">
+                    <section class="flow-card map-card" aria-labelledby="map-title">
+                        <div class="flow-card-heading">
+                            <div>
+                                <p class="chart-overline">Geographic pattern</p>
+                                <h4 id="map-title">Origins → United States</h4>
+                            </div>
+                            <p>Within each region, routes alternate down and up while later routes bend farther.</p>
+                        </div>
+                        <div id="flow-map" class="flow-map" aria-label="Flow map of international scholar origins">
+                            <p class="chart-loading">Loading world map…</p>
+                        </div>
+                    </section>
+
+                    <section class="flow-card bars-card" aria-labelledby="bars-title">
+                        <div class="flow-card-heading">
+                            <div>
+                                <p class="chart-overline">Accurate comparison</p>
+                                <h4 id="bars-title">Ranked origin countries</h4>
+                            </div>
+                            <p>The full-width ranking below supports exact comparison.</p>
+                        </div>
+                        <div id="ranked-bars" class="ranked-bars" aria-label="Ranked horizontal bar chart of international scholar origins">
+                            <p class="chart-loading">Loading rankings…</p>
+                        </div>
+                    </section>
+                </div>
+
+                <p class="chart-note"><strong>How to read:</strong> the dominant map shows geography and movement. Within each region, routes alternate downward and upward with progressively stronger curvature to reduce overlap. Line width is the primary magnitude encoding: thicker routes represent more scholars, while subtly darker blue reinforces larger values. The overall largest origin is red. The full-width horizontal ranking below provides exact raw counts, while linked hover and tooltips connect both views.</p>
+                <p class="data-source">Source: <a href="https://opendoorsdata.org/data/international-scholars/leading-places-of-origin/" target="_blank" rel="noopener">IIE Open Doors, International Scholars by Place of Origin, 2024/25</a>. The workbook contains 25 academic years from 2000/01 through 2024/25; this view uses the latest <em>Scholars</em> column. Its geographic hierarchy supplies the derived regions. Representative coordinates: <a href="https://github.com/mledoze/countries" target="_blank" rel="noopener">world-countries</a>. Basemap: <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">Natural Earth via world-atlas</a>.</p>
+            </article>
+        </section>
+
+        <article id="report" class="project-section project-report">
+            <p class="project-section-number">Part 2 · 500–800 words</p>
+            <h2>Visualization Critique and Redesign Report</h2>
+
+            <section>
+                <h3>Original Visualization and Context</h3>
+                <p>Visual Capitalist’s “International Students by Place of Origin (2022)” uses IIE Open Doors data to map the origins of 948,519 international students enrolled at U.S. colleges and universities. It fills countries with four blue ranges, directly labels selected values, and ranks the ten largest origins. This redesign necessarily uses a different Open Doors file: 116,540 international scholars in 2024/25. Open Doors defines these scholars as people on nonimmigrant visas engaged in temporary academic activities who are not enrolled as students. The populations and years therefore remain explicitly separate; numerical differences between the figures are not effects of the redesign.</p>
+            </section>
+
+            <section>
+                <h3>Intended Message, Audience, and Tasks</h3>
+                <p>The original communicates where international students in the United States come from, which countries contribute the most, and how origins cluster geographically. Its likely audience includes the general public, prospective students, educators, and higher-education readers. Viewers should be able to identify leading countries and outliers, compare counts, locate origins, and recognize regional patterns.</p>
+            </section>
+
+            <section>
+                <h3>Strengths</h3>
+                <p>First, a world map gives immediate geographic context. A viewer can locate origins and see the concentration in Asia without translating country names into locations. Second, sequential color is conceptually ordered and appropriate for magnitude. Direct labels provide exact values for selected countries, while numbered markers make the largest contributors quickly discoverable. The strong title, restrained palette, and visual prominence of China and India establish a clear hierarchy.</p>
+            </section>
+
+            <section>
+                <h3>Weaknesses</h3>
+                <p>The choropleth leaves the origin-to-destination relationship implicit: colored countries show “where,” but no mark expresses movement toward the United States. Because the story concerns people coming to one destination, that missing relationship matters. The redesign replaces filled magnitude areas with directed flows that converge on one labeled U.S. point.</p>
+                <p>Geographic area also competes with the encoded values. Large countries occupy more ink regardless of count, while small high-value origins can be visually minor. Origin dots and proportional-width arcs remove land area as a magnitude cue. Finally, four color bins make close countries indistinguishable and color is less precise than aligned position or length. Selected labels help only a subset, while dense leader lines around Europe and Asia add competition. A coordinated, sorted bar chart now supports exact comparisons; subtle map labels and tooltips improve country lookup.</p>
+            </section>
+
+            <section>
+                <h3>Redesign Rationale</h3>
+                <p>The first decision was to change the primary view from choropleth to flow map. Country centroids now connect to a common U.S. destination, making direction explicit and preserving geography without allowing country area to imply magnitude. Small arrowheads reinforce direction.</p>
+                <p>Second, flow width encodes relative volume on a square-root scale with a deliberately broad stroke range: larger counts produce visibly thicker routes without allowing China and India to become cartoonishly dominant. A subtle light-to-dark blue scale redundantly reinforces magnitude, while China, the overall maximum, stays red under every filter and is also identified textually. Within each region, routes are sorted deterministically by count, alternate downward and upward, and receive progressively larger bends so neighboring paths separate. Larger soft-gray country labels aid lookup, and hover or keyboard focus uses only mild de-emphasis while tooltips retain raw counts.</p>
+                <p>Third, the map occupies the dominant full-width top position, while a shorter horizontal ranking sits below it. The bars use aligned length and descending position for more accurate comparison without taking room from the geographic view. Both views always share the same filtered countries, and region plus Top 10, Top 20, or All controls enable progressive exploration. The All bar view scrolls vertically instead of shrinking labels or silently dropping origins.</p>
+            </section>
+
+            <section>
+                <h3>Original vs. Redesign</h3>
+                <p>The redesign makes convergence on the United States, regional clusters, leading origins, relative volume, and exact rank easier to understand together. Users can isolate a region, reduce overplotting, and inspect positive-value countries through gray map labels and tooltips. The original remains more compact for a static overview, while the redesign better supports comparison and exploration.</p>
+            </section>
+
+            <section>
+                <h3>Trade-offs and Limitations</h3>
+                <p>Flow maps are intuitive for movement but remain poor for precise magnitude; many arcs still overlap in All, which is why the bar chart is necessary. Country centroids simplify the true locations of individual scholars, and a single national destination cannot show their institutions or cities. Line width is less precise than aligned bar length, and the All view limits persistent labels to its top ten to control clutter. The 1:110m basemap omits some small territories as land shapes, although every positive country origin matched the coordinate source and receives a flow. Three stateless scholars are excluded because the map requires a country origin. Most importantly, this 2024/25 scholar view cannot be used to measure change from the original 2022 student figure.</p>
+            </section>
+
+            <figure class="redesign-capture">
+                <img src="redesigned-visualization.png" alt="Static overview of the redesigned international scholar flow map and coordinated ranked bar chart" loading="lazy">
+                <figcaption>Figure 2. Static capture of the redesign. The interactive version above provides filters, tooltips, coordinated highlighting, and keyboard focus.</figcaption>
+            </figure>
+
+            <section id="references" class="references">
+                <h3>References</h3>
+                <ol>
+                    <li>Soltani, E., &amp; Visual Capitalist. (2023). <a href="https://www.visualcapitalist.com/cp/international-students-in-the-u-s-come-from/" target="_blank" rel="noopener">“Where Do International Students in the U.S. Come From?”</a></li>
+                    <li>Institute of International Education. (2025). <a href="https://opendoorsdata.org/data/international-scholars/leading-places-of-origin/" target="_blank" rel="noopener">“International Scholars by Place of Origin, 2000/01–2024/25.”</a> Open Doors Report on International Educational Exchange.</li>
+                    <li>Le Doze, M. <a href="https://github.com/mledoze/countries" target="_blank" rel="noopener">World Countries</a>, version 5.1.0. ODbL-1.0.</li>
+                    <li>TopoJSON. <a href="https://github.com/topojson/world-atlas" target="_blank" rel="noopener">World Atlas</a>, Natural Earth 1:110m country boundaries.</li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <div id="flow-tooltip" class="tooltip project-tooltip flow-tooltip" role="tooltip" aria-hidden="true"></div>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+    <script src="project2.js"></script>
+</body>
+</html>
