@@ -1,28 +1,56 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <title>Lab 9</title>
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/lab9.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <header class="lab-header">
+        <a href="../index.html" class="back-link" aria-label="Back to all labs">←</a>
+        <h1>Lab 9: Geospatial Visualization with D3</h1>
+    </header>
+    <div class="lab9-data-explanation">
+        <h2>Dataset Description</h2>
+            <p>This visualization uses the provided 2025 nominal GDP dataset containing 
+                the 50 largest economies by nominal GDP. Each record includes an ISO-3 
+                country identifier, country name, GDP in billions of current U.S. dollars, 
+                and GDP rank. The GDP data are based on the IMF World Economic Outlook, October 2025. 
+                Because some observations may include IMF staff estimates and can later be revised, 
+                the values should be interpreted as current estimates rather than permanent figures. 
+                Countries outside the top-50 dataset are shown as missing data rather than being assigned a 
+                GDP value of zero.
+            </p>
+    </div>
+    <main class="lab9-page">
+        <section id="lab9-choropeth" class="lab9-section"></section>
+        <section id="lab9-cartogram" class="lab9-section"></section>
+    </main>
+    <div class="lab9-design-explanation">
+        <h2>Design and Comparison</h2>
+        <p>The choropleth and cartogram use the same GDP data, but they highlight different things. 
+            The choropleth keeps each country’s real location and shape, while color shows GDP. 
+            This makes it easier to see regional patterns and where larger or smaller economies are located. 
+            However, small countries can still be hard to notice even if their GDP is high.</p>
+        <p>The cartogram focuses more directly on economic size. Countries with larger GDP become bigger, 
+            while countries with smaller GDP shrink. This makes major economies such as the United States and 
+            China stand out more clearly. The trade-off is that country shapes and sizes are distorted, so some 
+            places become harder to recognize. Linked highlighting helps users match the same country across both 
+            maps.</p>
+        <p>Overall, the choropleth is better for understanding geographic patterns, while the cartogram is better 
+            for comparing economic magnitude. Using both views together gives a clearer picture of both location and 
+            relative economic size.</p>
+    </div>
 
-    <h1>Lab 9</h1>
+    <div id="lab9-tooltip" class="tooltip lab9-tooltip" role="tooltip"></div>
 
-    <p>
-        Lab 9 will be added here.
-    </p>
-
-    <a href="../index.html">
-        Back to home
-    </a>
-
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://unpkg.com/topojson-server@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cartogram-chart@1.4.4/dist/cartogram-chart.min.js"></script>
+    <script src="lab9.js"></script>
 </body>
-
 </html>

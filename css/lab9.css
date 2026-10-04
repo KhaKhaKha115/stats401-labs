@@ -1,0 +1,196 @@
+.lab9-page {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: min(1600px, calc(100vw - 48px));
+    margin: 28px 0 60px 50%;
+    transform: translateX(-50%);
+}
+
+.lab9-section {
+    min-width: 0;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #ded9ec;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 7px 22px rgb(69 56 123 / 7%);
+}
+
+.lab9-section h2 {
+    margin: 0 0 7px;
+    color: #39315f;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    line-height: 1.2;
+}
+
+.lab9-section p {
+    min-height: 48px;
+    margin: 0 0 12px;
+    color: #645e7e;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.lab9-section svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #faf9fd;
+}
+
+#lab9-choropeth > svg,
+.cartogram-host {
+    overflow: hidden;
+    border: 1px solid #e2deed;
+    border-radius: 9px;
+    background: #faf9fd;
+}
+
+.country {
+    cursor: pointer;
+    transition: opacity 140ms ease, stroke-width 140ms ease;
+    vector-effect: non-scaling-stroke;
+}
+
+.country:hover {
+    stroke: #332e54;
+}
+
+.cartogram-host {
+    width: 100%;
+}
+
+.cartogram-host svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cartogram-host .feature {
+    cursor: pointer;
+    stroke: #aaa;
+    stroke-width: 0.7;
+    vector-effect: non-scaling-stroke;
+    transition: opacity 140ms ease, stroke-width 140ms ease, stroke 140ms ease;
+}
+
+.cartogram-host .feature:hover {
+    stroke: #332e54;
+    stroke-width: 2;
+}
+
+.lab9-tooltip {
+    position: absolute;
+    z-index: 1000;
+    display: grid;
+    gap: 3px;
+    width: max-content;
+    max-width: 260px;
+    padding: 10px 12px;
+    border: 1px solid #cfc8e5;
+    border-radius: 6px;
+    color: #383348;
+    background: #fff;
+    box-shadow: 0 5px 18px rgb(46 38 81 / 16%);
+    font-family: "IBM Plex Serif", serif;
+    font-size: 13px;
+    line-height: 1.4;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.lab9-tooltip strong {
+    display: block;
+    margin-bottom: 2px;
+    color: #39315f;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lab9-tooltip span:last-child {
+    color: #514b78;
+    font-weight: 600;
+}
+
+/* legend */
+#lab9-choropeth .gdp-legend-bg {
+    fill: #8186d9;
+    stroke: none;
+}
+#lab9-choropeth .gdp-legend-title {
+    fill: #fff !important;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+#lab9-choropeth .gdp-legend-gradient {
+    stroke: rgba(255, 255, 255, 0.25);
+    stroke-width: 1;
+}
+#lab9-choropeth .gdp-legend-axis text {
+    fill: #fff !important;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+#lab9-choropeth .gdp-legend-axis line {
+    stroke: #fff;
+    stroke-width: 1.5;
+}
+
+@media (max-width: 1050px) {
+    .lab9-page {
+        grid-template-columns: 1fr;
+        width: min(900px, calc(100vw - 32px));
+        gap: 20px;
+    }
+
+    .lab9-section p {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 620px) {
+    .lab9-page {
+        width: calc(100vw - 24px);
+        margin-top: 20px;
+    }
+
+    .lab9-section {
+        padding: 14px;
+    }
+
+    .lab9-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .lab9-section p {
+        font-size: 0.84rem;
+    }
+}
+
+.cartogram-host {
+    width: 100%;
+    overflow: hidden;
+}
+
+.cartogram-host svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: grab;
+    background: #faf9fd;
+}
+
+.cartogram-host svg:active {
+    cursor: grabbing;
+}
+
+.cartogram-host .feature {
+    cursor: pointer;
+    stroke: #aaa;
+    stroke-width: 0.7;
+    vector-effect: non-scaling-stroke;
+    transition: opacity 140ms ease, stroke 140ms ease, stroke-width 140ms ease;
+}
