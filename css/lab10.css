@@ -1,0 +1,349 @@
+.lab10-page {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    width: min(1600px, calc(100vw - 48px));
+    margin: 28px 0 60px 50%;
+    transform: translateX(-50%);
+}
+
+.lab10-section {
+    min-width: 0;
+    overflow: hidden;
+    padding: 20px;
+    border: 1px solid #ded9ec;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 7px 22px rgb(69 56 123 / 7%);
+}
+
+.lab10-section h2 {
+    margin: 0 0 7px;
+    color: #39315f;
+    font-size: clamp(1.25rem, 2vw, 1.65rem);
+    line-height: 1.2;
+}
+
+.lab10-section p {
+    min-height: 48px;
+    margin: 0 0 12px;
+    color: #645e7e;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.lab10-section svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #faf9fd;
+}
+
+#lab10-choropleth > svg,
+.cartogram-host {
+    overflow: hidden;
+    border: 1px solid #e2deed;
+    border-radius: 9px;
+    background: #faf9fd;
+}
+
+.country {
+    cursor: pointer;
+    transition: opacity 140ms ease, stroke-width 140ms ease;
+    vector-effect: non-scaling-stroke;
+}
+
+.country:hover {
+    stroke: #332e54;
+}
+
+.cartogram-host {
+    width: 100%;
+}
+
+.cartogram-host svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    cursor: grab;
+    background: #faf9fd;
+}
+
+.cartogram-host svg:active {
+    cursor: grabbing;
+}
+
+.cartogram-host .feature {
+    cursor: pointer;
+    stroke: #aaa;
+    stroke-width: 0.7;
+    vector-effect: non-scaling-stroke;
+    transition: opacity 140ms ease, stroke 140ms ease, stroke-width 140ms ease;
+}
+
+.cartogram-host .feature:hover {
+    stroke: #332e54;
+    stroke-width: 2;
+}
+
+.lab10-tooltip {
+    position: absolute;
+    z-index: 1000;
+    display: grid;
+    gap: 3px;
+    width: max-content;
+    max-width: 260px;
+    padding: 10px 12px;
+    border: 1px solid #cfc8e5;
+    border-radius: 6px;
+    color: #383348;
+    background: #fff;
+    box-shadow: 0 5px 18px rgb(46 38 81 / 16%);
+    font-family: "IBM Plex Serif", serif;
+    font-size: 13px;
+    line-height: 1.4;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.lab10-tooltip strong {
+    display: block;
+    margin-bottom: 2px;
+    color: #39315f;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lab10-tooltip span:last-child {
+    color: #514b78;
+    font-weight: 600;
+}
+
+/* Voice controls */
+.voice-control-panel {
+    display: grid;
+    grid-template-columns: minmax(240px, 1fr) minmax(300px, 1.2fr);
+    gap: 20px 28px;
+    margin: 28px 0 0;
+    padding: 24px;
+    border: 1px solid #4f477a;
+    border-radius: 12px;
+    color: #fff;
+    background: #39315f;
+    box-shadow: 0 7px 22px rgb(46 38 81 / 15%);
+}
+
+.voice-control-panel h2 {
+    margin: 0 0 8px;
+    color: #fff;
+    font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+
+.voice-control-panel p {
+    margin: 0;
+}
+
+.voice-command-examples {
+    margin-top: 10px !important;
+    color: #ddd9f2;
+    font-size: 0.9rem;
+}
+
+.voice-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.voice-controls label {
+    width: 100%;
+    margin-top: 4px;
+    font-weight: 600;
+}
+
+.voice-button,
+#country-select {
+    min-height: 42px;
+    border: 1px solid #cbc5e5;
+    border-radius: 7px;
+    font: 600 0.92rem/1.2 "IBM Plex Serif", serif;
+}
+
+.voice-button {
+    padding: 9px 14px;
+    color: #39315f;
+    background: #f5f3fb;
+    cursor: pointer;
+}
+
+.voice-button-primary {
+    border-color: #f4aff1;
+    background: #f4aff1;
+}
+
+.voice-button:hover:not(:disabled) {
+    background: #fff;
+}
+
+.voice-button:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+}
+
+.voice-button:focus-visible,
+#country-select:focus-visible {
+    outline: 3px solid #f4aff1;
+    outline-offset: 3px;
+}
+
+#country-select {
+    flex: 1 1 100%;
+    width: 100%;
+    padding: 8px 36px 8px 10px;
+    color: #39315f;
+    background: #fff;
+}
+
+.voice-feedback {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+.voice-feedback p {
+    min-width: 0;
+    padding: 10px 12px;
+    border-radius: 7px;
+    color: #39315f;
+    background: #f5f3fb;
+    overflow-wrap: anywhere;
+}
+
+#voice-action.feedback-error {
+    color: #9c1c35;
+    font-weight: 600;
+}
+
+.selected-country-panel {
+    grid-column: 1 / -1;
+    padding: 16px 18px;
+    border: 1px solid #f4aff1;
+    border-radius: 9px;
+    color: #fff;
+    background: #292544;
+}
+
+.selected-country-panel[hidden] {
+    display: none;
+}
+
+.selected-country-panel h3 {
+    margin: 0 0 10px;
+    color: #fff;
+    font-size: 1.08rem;
+}
+
+.selected-country-panel h3 span {
+    color: #f4aff1;
+}
+
+.selected-country-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+
+.selected-country-details p {
+    color: #f5f3fb;
+}
+
+.lab10-design-reflection {
+    margin-bottom: 60px;
+}
+
+/* GDP legend */
+#lab10-choropleth .gdp-legend-bg {
+    fill: #8186d9;
+    stroke: none;
+}
+
+#lab10-choropleth .gdp-legend-title {
+    fill: #fff !important;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#lab10-choropleth .gdp-legend-gradient {
+    stroke: rgba(255, 255, 255, 0.25);
+    stroke-width: 1;
+}
+
+#lab10-choropleth .gdp-legend-axis text {
+    fill: #fff !important;
+    font-family: "IBM Plex Serif", serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+#lab10-choropleth .gdp-legend-axis line {
+    stroke: #fff;
+    stroke-width: 1.5;
+}
+
+@media (max-width: 1050px) {
+    .lab10-page {
+        grid-template-columns: 1fr;
+        width: min(900px, calc(100vw - 32px));
+        gap: 20px;
+    }
+
+    .lab10-section p {
+        min-height: 0;
+    }
+}
+
+@media (max-width: 760px) {
+    .voice-control-panel,
+    .voice-feedback {
+        grid-template-columns: 1fr;
+    }
+
+    .voice-feedback,
+    .selected-country-panel {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 620px) {
+    .lab10-page {
+        width: calc(100vw - 24px);
+        margin-top: 20px;
+    }
+
+    .lab10-section,
+    .voice-control-panel {
+        padding: 14px;
+    }
+
+    .lab10-section h2 {
+        font-size: 1.25rem;
+    }
+
+    .lab10-section p {
+        font-size: 0.84rem;
+    }
+
+    .voice-controls {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .voice-controls label {
+        margin-top: 8px;
+    }
+}

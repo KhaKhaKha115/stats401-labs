@@ -1,28 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <title>Lab 10</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10: Novel Interaction with Visualizations</title>
     <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/lab10.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <header class="lab-header">
+        <a href="../index.html" class="back-link" aria-label="Back to all labs">←</a>
+        <h1>Lab 10: Novel Interaction with Visualizations</h1>
+    </header>
+    <div class="lab10-data-explanation">
+        <h2>Dataset Description</h2>
+            <p>This visualization uses the provided 2025 nominal GDP dataset containing
+                the 50 largest economies by nominal GDP. Each record includes an ISO-3
+                country identifier, country name, GDP in billions of current U.S. dollars,
+                and GDP rank. The GDP data are based on the IMF World Economic Outlook, October 2025.
+                Because some observations may include IMF staff estimates and can later be revised,
+                the values should be interpreted as current estimates rather than permanent figures.
+                Countries outside the top-50 dataset are shown as missing data rather than being assigned a
+                GDP value of zero.
+            </p>
+    </div>
 
-    <h1>Lab 10</h1>
+    <section class="voice-control-panel" aria-labelledby="voice-control-title">
+        <div class="voice-control-copy">
+            <h2 id="voice-control-title">Voice-Controlled Map Exploration</h2>
+            <p>Use voice commands to highlight countries across both maps.</p>
+            <p class="voice-command-examples">Try: Highlight Japan · Show China · Find Germany · Reset</p>
+        </div>
 
-    <p>
-        Lab 10 will be added here.
-    </p>
+        <div class="voice-controls">
+            <button id="voice-start" class="voice-button voice-button-primary" type="button">
+                <span aria-hidden="true">🎙</span> Start Listening
+            </button>
+            <button id="voice-stop" class="voice-button" type="button" disabled>Stop Listening</button>
+            <button id="selection-reset" class="voice-button" type="button">Reset Selection</button>
+            <label for="country-select">Country</label>
+            <select id="country-select" aria-label="Select a country to highlight" disabled>
+                <option value="">Loading countries…</option>
+            </select>
+        </div>
 
-    <a href="../index.html">
-        Back to home
-    </a>
+        <div class="voice-feedback" aria-live="polite" aria-atomic="true">
+            <p><strong>Status:</strong> <span id="voice-status">Stopped</span></p>
+            <p><strong>Heard:</strong> <span id="voice-transcript">Nothing yet</span></p>
+            <p><strong>Action:</strong> <span id="voice-action">Choose a country or start listening.</span></p>
+        </div>
 
+        <div id="selected-country-panel" class="selected-country-panel" aria-live="polite" hidden>
+            <h3>Selected Country: <span id="selected-country-name"></span></h3>
+            <div class="selected-country-details">
+                <p id="selected-country-gdp"></p>
+                <p id="selected-country-rank"></p>
+            </div>
+        </div>
+    </section>
+
+    <main class="lab10-page">
+        <section id="lab10-choropleth" class="lab10-section"></section>
+        <section id="lab10-cartogram" class="lab10-section"></section>
+    </main>
+    <section class="lab10-design-reflection">
+        <h2>Design Reflection</h2>
+        <p>In Lab 10, I extended my Lab 9 choropleth and cartogram by adding voice interaction. Instead of finding and clicking a country on the map, users can simply say its name to highlight it on both maps. The selected country's GDP and rank are also displayed.</p>
+        <p>I chose voice interaction because some countries are difficult to find on the cartogram, where their shapes and sizes are distorted based on GDP. By saying the country name, users can locate it more easily and compare how it appears on the two maps without searching manually.</p>
+        <p>However, voice recognition is not always accurate. It may misunderstand country names because of pronunciation, accents, or background noise. Some browsers may also not support speech recognition. To address these limitations, I added feedback showing what the system heard and which country was selected. Users can also use the dropdown or mouse to explore the maps when voice recognition does not work properly.</p>
+    </section>
+
+    <div id="lab10-tooltip" class="tooltip lab10-tooltip" role="tooltip"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://unpkg.com/topojson-server@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cartogram-chart@1.4.4/dist/cartogram-chart.min.js"></script>
+    <script src="lab10.js"></script>
 </body>
-
 </html>
